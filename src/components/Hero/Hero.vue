@@ -15,7 +15,9 @@
       alt=""
       class="rocket absolute bottom-0 left-0 h-auto"
     />
-    <scroll-mark />
+    <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
+      <ScrollMark />
+    </div>
   </section>
 </template>
 

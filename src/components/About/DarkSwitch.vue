@@ -1,14 +1,14 @@
 <template>
   <button
     @click="toggleTheme"
-    class="switch-wrapper relative bg-c-gray shadow-inner focus:outline-none"
+    class="switch-wrapper relative bg-gray-400 shadow-inner focus:outline-none"
   >
     <img
       :src="imgUrl"
       width="35"
       height="35"
       loading="lazy"
-      alt=""
+      :alt="imgAlt"
       class="switch-btn absolute left-0 top-0"
       :class="positionClass"
     />
@@ -23,6 +23,7 @@ export default {
       darkTheme: null,
       positionClass: null,
       imgUrl: null,
+      imgAlt: null,
     };
   },
   created() {
@@ -53,11 +54,13 @@ export default {
         localStorage.theme = 'dark';
         this.positionClass = 'position-right';
         this.imgUrl = '/static/img/about/moon@2x.png';
+        this.imgAlt = 'ダークモードON';
         document.querySelector('html').classList.add('dark');
       } else {
         localStorage.removeItem('theme');
         this.positionClass = 'position-left';
         this.imgUrl = '/static/img/about/sun@2x.png';
+        this.imgAlt = 'ダークモードOFF';
         document.querySelector('html').classList.remove('dark');
       }
     },
@@ -75,16 +78,17 @@ export default {
 .switch-btn {
   width: 50px;
   height: 50px;
-  margin-top: -10px;
+  margin-top: -11px;
   transition: transform 0.3s;
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
 }
 
 .position-left {
   transform: translateX(-5px);
+  filter: drop-shadow(0 0 5px rgba(252, 92, 0, 0.3));
 }
 
 .position-right {
   transform: translateX(55px);
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
 </style>

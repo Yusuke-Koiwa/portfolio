@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden">
+  <div class="overflow-hidden bg-white dark:bg-black">
     <Header />
     <Hero />
     <About />

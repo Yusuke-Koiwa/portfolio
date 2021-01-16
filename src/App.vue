@@ -7,6 +7,7 @@
     <main>
       <Hero :darkTheme="darkTheme" />
       <About :darkTheme="darkTheme" @toggleTheme="toggleTheme" />
+      <Skills />
     </main>
   </div>
 </template>
@@ -15,6 +16,7 @@
 import Hero from './components/Hero/Hero.vue';
 import Header from './components/Header/Header.vue';
 import About from './components/About/About.vue';
+import Skills from './components/Skills/Skills.vue';
 
 export default {
   name: 'App',
@@ -22,6 +24,7 @@ export default {
     Hero,
     Header,
     About,
+    Skills,
   },
   data() {
     return {

@@ -5,7 +5,12 @@
     <p class="text-lg mb-10">
       ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。ここに自己紹介を記入。
     </p>
-    <a href="#" class="block w-60 h-14 border border-black dark:bg-black dark:border-white">
+    <a
+      href="https://github.com/Yusuke-Koiwa"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block w-60 h-14 border border-black dark:bg-black dark:border-white"
+    >
       <div class="w-full h-full flex justify-center items-center">
         <img :src="imgUrl" width="45" height="45" alt="GitHubロゴ" class="mr-3" />
         <p class="text-2xl mr-3">GitHub</p>

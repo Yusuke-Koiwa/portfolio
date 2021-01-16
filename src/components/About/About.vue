@@ -1,5 +1,5 @@
 <template>
-  <section id="about">
+  <section id="about" class="pt-14 pb-40">
     <Container>
       <div class="w-full h-20 flex justify-end items-center">
         <Dark-switch @toggleTheme="toggleTheme" :darkTheme="darkTheme" />
@@ -9,7 +9,10 @@
 
       <img :src="imgUrl" width="65" height="65" alt="" class="transform rotate-90 mx-auto" />
 
-      <Intro :darkTheme="darkTheme" class="w-1/2 my-8" />
+      <div class="flex">
+        <Intro :darkTheme="darkTheme" class="w-1/2" />
+        <Planets class="w-1/2" />
+      </div>
     </Container>
   </section>
 </template>
@@ -17,11 +20,12 @@
 <script>
 import Container from '../Container.vue';
 import DarkSwitch from './DarkSwitch.vue';
-import Heading from './Heading.vue';
+import Heading from '../Heading.vue';
 import Intro from './Intro.vue';
+import Planets from './Planets.vue';
 export default {
   name: 'About',
-  components: { Container, DarkSwitch, Heading, Intro },
+  components: { Container, DarkSwitch, Heading, Intro, Planets },
   methods: {
     toggleTheme(dark) {
       this.$emit('toggleTheme', dark);

@@ -5,7 +5,7 @@
   >
     <Header />
     <main>
-      <Hero />
+      <Hero :darkTheme="darkTheme" />
       <About :darkTheme="darkTheme" @toggleTheme="toggleTheme" />
     </main>
   </div>

@@ -2,8 +2,8 @@
   <div class="mb-10">
     <div class="relative inline-block">
       <p class="mb-1">{{ text }}</p>
-      <div class="line w-full bg-black"></div>
-      <div class="rotate-line absolute bottom-0 right-0 h-4 transform bg-black"></div>
+      <div class="line w-full bg-black dark:bg-white"></div>
+      <div class="rotate-line absolute bottom-0 right-0 h-4 transform bg-black dark:bg-white"></div>
     </div>
   </div>
 </template>

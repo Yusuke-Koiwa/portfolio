@@ -7,15 +7,9 @@
 
       <Heading title="ABOUT" subtitle="自己紹介" class="my-4" />
 
-      <img
-        src="/static/img/rocket-black.svg"
-        width="65"
-        height="65"
-        alt=""
-        class="transform rotate-90 mx-auto"
-      />
+      <img :src="imgUrl" width="65" height="65" alt="" class="transform rotate-90 mx-auto" />
 
-      <Intro class="w-1/2 my-8" />
+      <Intro :darkTheme="darkTheme" class="w-1/2 my-8" />
     </Container>
   </section>
 </template>
@@ -33,9 +27,23 @@ export default {
       this.$emit('toggleTheme', dark);
     },
   },
+  data() {
+    return {
+      imgUrl: null,
+    };
+  },
   props: {
     darkTheme: {
       type: Boolean,
+    },
+  },
+  watch: {
+    darkTheme: function (dark) {
+      if (dark) {
+        this.imgUrl = '/static/img/rocket-white.svg';
+      } else {
+        this.imgUrl = '/static/img/rocket-black.svg';
+      }
     },
   },
 };

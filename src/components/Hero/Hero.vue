@@ -5,16 +5,19 @@
       alt=""
       class="absolute bottom-0 -right-0.5 w-full h-full"
     />
+
     <p
       class="absolute catch-copy top-1/2 right-1/2 transform translate-x-3/4 -translate-y-1/2 font-heading text-7xl text-center z-10 whitespace-nowrap"
     >
       Expand the Possibilities
     </p>
+
     <img
       src="/static/img/hero/rocket@2x.png"
       alt=""
       class="rocket absolute bottom-0 left-0 h-auto"
     />
+
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
       <ScrollMark />
     </div>

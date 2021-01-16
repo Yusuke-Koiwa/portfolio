@@ -1,8 +1,13 @@
 <template>
-  <div class="overflow-hidden bg-white dark:bg-black">
+  <div
+    :class="bgClass"
+    class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black"
+  >
     <Header />
-    <Hero />
-    <About />
+    <main>
+      <Hero />
+      <About :darkTheme="darkTheme" @toggleTheme="toggleTheme" />
+    </main>
   </div>
 </template>
 
@@ -18,5 +23,38 @@ export default {
     Header,
     About,
   },
+  data() {
+    return {
+      darkTheme: null,
+      bgClass: null,
+    };
+  },
+  methods: {
+    toggleTheme: function (dark) {
+      this.darkTheme = dark;
+    },
+  },
+  watch: {
+    darkTheme: function (dark) {
+      if (dark) {
+        localStorage.theme = 'dark';
+        document.querySelector('html').classList.add('dark');
+        this.bgClass = 'bg-dark';
+      } else {
+        localStorage.removeItem('theme');
+        document.querySelector('html').classList.remove('dark');
+        this.bgClass = 'bg-light';
+      }
+    },
+  },
 };
 </script>
+
+<style scoped>
+.bg-light {
+  background-image: url('/static/img/bg-normal.png');
+}
+.bg-dark {
+  background-image: url('/static/img/bg-dark.png');
+}
+</style>

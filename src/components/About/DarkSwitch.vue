@@ -20,11 +20,15 @@ export default {
   name: 'DarkSwitch',
   data() {
     return {
-      darkTheme: null,
       positionClass: null,
       imgUrl: null,
       imgAlt: null,
     };
+  },
+  props: {
+    darkTheme: {
+      type: Boolean,
+    },
   },
   created() {
     if (
@@ -32,18 +36,18 @@ export default {
       (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       document.querySelector('html').classList.add('dark');
-      this.darkTheme = true;
+      this.$emit('toggleTheme', true);
     } else {
       document.querySelector('html').classList.remove('dark');
-      this.darkTheme = false;
+      this.$emit('toggleTheme', false);
     }
   },
   methods: {
     toggleTheme: function () {
       if (this.darkTheme) {
-        this.darkTheme = false;
+        this.$emit('toggleTheme', false);
       } else {
-        this.darkTheme = true;
+        this.$emit('toggleTheme', true);
       }
     },
   },
@@ -51,17 +55,15 @@ export default {
   watch: {
     darkTheme: function (dark) {
       if (dark) {
-        localStorage.theme = 'dark';
         this.positionClass = 'position-right';
         this.imgUrl = '/static/img/about/moon@2x.png';
         this.imgAlt = 'ダークモードON';
-        document.querySelector('html').classList.add('dark');
+        this.$emit('toggleTheme', dark);
       } else {
-        localStorage.removeItem('theme');
         this.positionClass = 'position-left';
         this.imgUrl = '/static/img/about/sun@2x.png';
         this.imgAlt = 'ダークモードOFF';
-        document.querySelector('html').classList.remove('dark');
+        this.$emit('toggleTheme', dark);
       }
     },
   },

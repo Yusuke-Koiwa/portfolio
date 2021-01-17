@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 bg-white dark:bg-black dark:text-white bg-opacity-90">
+  <div class="p-4 bg-white dark:bg-black dark:text-white bg-opacity-70 dark:bg-opacity-70">
     <IntroItem text="いわっち" class="text-3xl" />
     <IntroItem text="フロントエンドエンジニア" class="text-2xl" />
     <p class="text-lg mb-10">

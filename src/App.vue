@@ -1,13 +1,11 @@
 <template>
-  <div
-    :class="bgClass"
-    class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black"
-  >
+  <div :class="bgClass" class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black">
     <Header />
     <main>
       <Hero :darkTheme="darkTheme" />
       <About :darkTheme="darkTheme" @toggleTheme="toggleTheme" />
       <Skills />
+      <Service />
     </main>
   </div>
 </template>
@@ -17,6 +15,7 @@ import Hero from './components/Hero/Hero.vue';
 import Header from './components/Header/Header.vue';
 import About from './components/About/About.vue';
 import Skills from './components/Skills/Skills.vue';
+import Service from './components/Service/Service.vue';
 
 export default {
   name: 'App',
@@ -25,6 +24,7 @@ export default {
     Header,
     About,
     Skills,
+    Service,
   },
   data() {
     return {

@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
       },
+      fontSize: {
+        '4.5xl': ['2.5rem', '1.25'],
+      },
       colors: {
         'c-gray': '#C3C3C3',
       },

@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="pt-14 pb-40">
+  <section id="skills" class="pt-24 pb-40">
     <Container>
       <Heading title="SKILLS" subtitle="スキル" class="mb-16" />
 

@@ -1,7 +1,7 @@
 <template>
   <section id="service" class="pt-24 pb-40">
     <Container>
-      <heading title="SERVICE" subtitle="サービス" class="mb-16"></heading>
+      <Heading title="SERVICE" subtitle="サービス" class="mb-16"></Heading>
       <div class="relative">
         <Service-item :number="1" label="Webサイト制作" :right="false"
           >ランディングページなどのwebサイト制作をおこないます。スマホやタブレット端末での表示に対するレスポンシブ化のほか、

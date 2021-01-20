@@ -1,11 +1,11 @@
 <template>
   <div class="slider-wrapper">
     <div class="relative">
-      <div class="slider-bg bg-c-gray absolute bottom-0 top-0 left-0 right-0"></div>
+      <div class="slider-bg absolute bottom-0 top-0 left-0 right-0 bg-c-gray dark:bg-dark-gray"></div>
       <Container>
-        <swiper :slides-per-view="2" :space-between="50" :loop="true" navigation @swiper="onSwiper" @slideChange="onSlideChange">
-          <swiper-slide class="relative">
-            <img src="/static/img/works/works01@2x.png" alt="" class="mb-9" />
+        <swiper ref="mySwiper" :slides-per-view="2" :space-between="50" :loop="true" navigation class="dark:text-white">
+          <swiper-slide class="flex flex-col h-auto justify-between">
+            <img src="/static/img/works/works01@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-9" />
             <h3 class="slide-text mb-9 text-3xl text-center font-semibold">Anytime Nature</h3>
             <div class="slide-text mb-9 text-lg">
               <p>
@@ -13,11 +13,11 @@
                 エンドの実装まで全て個人で開発しました。バックエンドはRuby on Rails、画像の保存は AWS S3を使用しています。
               </p>
             </div>
-            <Link-button :url="'#'" />
+            <Link-button :url="'https://anytime-nature.herokuapp.com/'" />
           </swiper-slide>
 
-          <swiper-slide class="relative">
-            <img src="/static/img/works/works02@2x.png" alt="" class="mb-9" />
+          <swiper-slide class="flex flex-col h-auto justify-between">
+            <img src="/static/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-9" />
             <h3 class="mb-9 text-3xl text-center font-semibold">完全版マハーバーラタ（模写×WordPress）</h3>
             <div class="slide-text">
               <p class="mb-3 text-lg">
@@ -26,11 +26,11 @@
               </p>
               <p class="mb-3">ユーザー名：iwa<br />パスワード：iwa</p>
             </div>
-            <Link-button :url="'#'" />
+            <Link-button :url="'https://mb.iwa-portfolio.com/'" />
           </swiper-slide>
 
-          <swiper-slide class="relative">
-            <img src="/static/img/works/works03@2x.png" alt="" class="mb-9" />
+          <swiper-slide class="flex flex-col h-auto justify-between">
+            <img src="/static/img/works/works03@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-9" />
             <h3 class="mb-9 text-3xl text-center font-semibold">Engress（WordPress架空企業サイト）</h3>
             <div class="slide-text">
               <p class="mb-3 text-lg">
@@ -38,10 +38,25 @@
               </p>
               <p class="mb-3">ユーザー名：iwa<br />パスワード：iwa</p>
             </div>
-            <Link-button :url="'#'" />
+            <Link-button :url="'https://iwa-portfolio.com/'" />
           </swiper-slide>
         </swiper>
       </Container>
+
+      <div class="btn-container absolute z-10 top-1/2 left-0">
+        <button
+          class="slider-btn mr-3.5 rounded-full text-3xl font-semibold bg-gray-300 dark:bg-gray-600 dark:text-white shadow focus:outline-none"
+          @click="prevSlide"
+        >
+          ＜
+        </button>
+        <button
+          class="slider-btn rounded-full text-3xl font-semibold bg-gray-300 dark:bg-gray-600 dark:text-white shadow focus:outline-none"
+          @click="nextSlide"
+        >
+          ＞
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -64,11 +79,11 @@ export default {
     LinkButton,
   },
   methods: {
-    onSwiper(swiper) {
-      console.log(swiper);
+    prevSlide() {
+      document.getElementsByClassName('swiper-button-next')[0].click();
     },
-    onSlideChange() {
-      console.log('slide change');
+    nextSlide() {
+      document.getElementsByClassName('swiper-button-prev')[0].click();
     },
   },
 };
@@ -84,18 +99,18 @@ export default {
 .swiper-button-next,
 .swiper-button-prev {
   visibility: hidden;
-  /* z-index: 10;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  box-shadow: 0 1px 10px #777;
-  color: black;
-  background-color: #c3c3c3; */
 }
 </style>
 
 <style scoped>
 .slider-bg {
   transform: translateY(35px);
+}
+.btn-container {
+  transform: translateX(-70%);
+}
+.slider-btn {
+  width: 70px;
+  height: 70px;
 }
 </style>

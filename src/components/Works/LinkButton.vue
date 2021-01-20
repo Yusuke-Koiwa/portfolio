@@ -1,5 +1,10 @@
 <template>
-  <a :href="url" class="button block mb-1 mx-auto flex justify-center items-center shadow-md bg-white dark:bg-black">
+  <a
+    :href="url"
+    class="button block mb-1 mx-auto flex justify-center items-center shadow-md bg-white dark:bg-black"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <div class="mr-2 text-xl font-semibold dark:text-white">MORE</div>
     <div class="arrow relative pt-1">
       <div class="line bg-black dark:bg-white"></div>

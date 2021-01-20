@@ -7,7 +7,7 @@
 
       <Heading title="ABOUT" subtitle="自己紹介" class="my-4" />
 
-      <img :src="imgUrl" width="65" height="65" alt="" class="transform rotate-90 mx-auto" />
+      <img :src="imgUrl" width="65" height="65" loading="lazy" alt="" class="transform rotate-90 mx-auto" />
 
       <div class="flex">
         <Intro :darkTheme="darkTheme" class="w-1/2" />

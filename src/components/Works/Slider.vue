@@ -80,10 +80,10 @@ export default {
   },
   methods: {
     prevSlide() {
-      document.getElementsByClassName('swiper-button-next')[0].click();
+      document.getElementsByClassName('swiper-button-prev')[0].click();
     },
     nextSlide() {
-      document.getElementsByClassName('swiper-button-prev')[0].click();
+      document.getElementsByClassName('swiper-button-next')[0].click();
     },
   },
 };

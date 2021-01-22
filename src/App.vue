@@ -7,6 +7,7 @@
       <Skills />
       <Service />
       <Works />
+      <Contact />
     </main>
   </div>
 </template>
@@ -18,6 +19,7 @@ import About from './components/About/About.vue';
 import Skills from './components/Skills/Skills.vue';
 import Service from './components/Service/Service.vue';
 import Works from './components/Works/Works.vue';
+import Contact from './components/Contact/Contact.vue';
 
 export default {
   name: 'App',
@@ -28,6 +30,7 @@ export default {
     Skills,
     Service,
     Works,
+    Contact,
   },
   data() {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-3/4 mb-48 px-4 py-8 bg-white dark:text-white dark:bg-black bg-opacity-80 dark:bg-opacity-80" :class="align">
+  <div class="w-3/4 px-4 py-8 bg-white dark:text-white dark:bg-black bg-opacity-80 dark:bg-opacity-80" :class="align">
     <h3 class="mb-7">
       <span class="number mr-2 text-4xl font-semibold">0{{ number }}.</span>
       <span class="text-4.5xl font-semibold">{{ label }}</span>

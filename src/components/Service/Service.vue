@@ -3,11 +3,11 @@
     <Container>
       <Heading title="SERVICE" subtitle="サービス" class="mb-16"></Heading>
       <div class="relative">
-        <Service-item :number="1" label="Webサイト制作" :right="false"
+        <Service-item :number="1" label="Webサイト制作" :right="false" class="mb-48"
           >ランディングページなどのwebサイト制作をおこないます。スマホやタブレット端末での表示に対するレスポンシブ化のほか、
           アニメーションを用いた動きのあるWebサイト制作が得意です。</Service-item
         >
-        <Service-item :number="2" label="WordPressサイト制作/移行" :right="true"
+        <Service-item :number="2" label="WordPressサイト制作/移行" :right="true" class="mb-48"
           >ブログやお知らせなど、更新が必要なWebサイトはWordPressで制作いたします。
           既存WordPress移行やテーマのカスタマイズ、オリジナルテーマの制作が可能です。
           その他、サイトの高速化、セキュリティ対策、内部SEO対策などもお任せください。</Service-item

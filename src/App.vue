@@ -7,7 +7,8 @@
       <Skills />
       <Service />
       <Works />
-      <Contact />
+      <Contact :darkTheme="darkTheme" />
+      <Footer />
     </main>
   </div>
 </template>
@@ -20,6 +21,7 @@ import Skills from './components/Skills/Skills.vue';
 import Service from './components/Service/Service.vue';
 import Works from './components/Works/Works.vue';
 import Contact from './components/Contact/Contact.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -31,6 +33,7 @@ export default {
     Service,
     Works,
     Contact,
+    Footer,
   },
   data() {
     return {

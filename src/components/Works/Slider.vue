@@ -113,4 +113,8 @@ export default {
   width: 70px;
   height: 70px;
 }
+.slider-btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
 </style>

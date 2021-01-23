@@ -1,7 +1,7 @@
 <template>
   <a
     :href="url"
-    class="button block mb-1 mx-auto flex justify-center items-center shadow-md bg-white dark:bg-black"
+    class="button block mb-1 mx-auto flex justify-center items-center shadow bg-white dark:bg-black"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -26,6 +26,10 @@ export default {
 .button {
   width: 160px;
   height: 60px;
+}
+.button:active {
+  transform: translateY(1px);
+  box-shadow: none;
 }
 .line {
   width: 38px;

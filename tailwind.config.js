@@ -21,6 +21,8 @@ module.exports = {
   variants: {
     extend: {
       backgroundOpacity: ['dark'],
+      opacity: ['disabled'],
+      cursor: ['disabled'],
     },
   },
   plugins: [],

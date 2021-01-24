@@ -1,7 +1,7 @@
 <template>
   <div class="slider-wrapper">
     <div class="relative">
-      <div class="slider-bg absolute bottom-0 top-0 left-0 right-0 bg-c-gray dark:bg-dark-gray"></div>
+      <div class="slider-bg absolute bottom-0 top-0 left-0 right-0 bg-c-gray dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"></div>
       <Container>
         <swiper ref="mySwiper" :slides-per-view="2" :space-between="50" :loop="true" navigation class="dark:text-white">
           <swiper-slide class="flex flex-col h-auto justify-between">

@@ -7,7 +7,7 @@
       method="post"
       target="submitted"
       @submit="submitted = true"
-      class="form pt-24 bg-c-gray dark:bg-dark-gray dark:text-white"
+      class="form pt-24 pb-4 bg-c-gray dark:bg-dark-gray dark:text-white"
     >
       <Container>
         <p class="form-description w-full mx-auto mb-16 text-2xl leading-10">
@@ -72,7 +72,7 @@
       </Container>
     </form>
     <transition name="fade" @before-enter="beforeEnter" @enter="enter" appear>
-      <div v-if="submitted" class="submitted-message w-full overflow-hidden pt-12 px-6 text-center bg-c-gray dark:bg-dark-gray">
+      <div v-if="submitted" class="submitted-message w-full overflow-hidden pt-8 px-6 text-center bg-c-gray dark:bg-dark-gray">
         <div class="inline-block mx-auto p-4 px-6 border-2 border-green-500 text-lg leading-8 dark:text-white">
           <p>フォームの送信が完了しました。</p>
           <p>内容を確認後、追って返信致しますのでお待ちください。</p>

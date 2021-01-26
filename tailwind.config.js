@@ -2,6 +2,12 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '520px',
+      md: '768px',
+      lg: '960px',
+      xl: '1024px',
+    },
     extend: {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],

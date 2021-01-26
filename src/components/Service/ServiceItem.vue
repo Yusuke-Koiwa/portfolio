@@ -1,11 +1,22 @@
 <template>
-  <div class="service-item flex items-center p-8 bg-c-gray dark:text-white dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90" :class="customClass">
-    <div class="service-item-inner mx-auto">
-      <h3 class="mb-7">
-        <span class="number mr-2 text-4xl font-semibold">0{{ number }}.</span>
-        <span class="text-4.5xl font-semibold">{{ label }}</span>
-      </h3>
-      <p class="text-2xl text-left leading-10"><slot /></p>
+  <div
+    class="service-item flex items-center p-8 bg-c-gray dark:text-white dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"
+    :class="[isRight ? 'text-right margin-left' : 'margin-right']"
+  >
+    <div class="service-item-inner mx-auto flex justify-between items-center" :class="[isRight ? 'flex-row-reverse' : '']">
+      <div class="service-text">
+        <h3 class="mb-7">
+          <span class="number mr-2 text-4xl font-semibold">0{{ number }}.</span>
+          <span class="text-4.5xl font-semibold">{{ label }}</span>
+        </h3>
+        <p class="text-2xl text-left leading-10"><slot /></p>
+      </div>
+      <div
+        class="img-wrapper flex justify-center items-center rounded-full bg-white bg-opacity-90 dark:bg-opacity-70"
+        :class="[isRight ? 'mr-8' : 'ml-8']"
+      >
+        <img :src="imgUrl" alt="" :width="imgSize" :height="imgSize" />
+      </div>
     </div>
   </div>
 </template>
@@ -18,16 +29,9 @@ export default {
   props: {
     number: Number,
     label: String,
-    right: Boolean,
-  },
-  computed: {
-    customClass: function () {
-      if (this.right) {
-        return 'text-right margin-left';
-      } else {
-        return 'margin-right';
-      }
-    },
+    imgUrl: String,
+    imgSize: Number,
+    isRight: Boolean,
   },
 };
 </script>
@@ -47,5 +51,12 @@ export default {
 }
 .number {
   color: #2c1da0;
+}
+.img-wrapper {
+  width: 250px;
+  height: 250px;
+}
+.service-text {
+  width: calc(100% - 250px);
 }
 </style>

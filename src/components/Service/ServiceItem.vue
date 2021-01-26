@@ -15,7 +15,7 @@
         class="img-wrapper flex justify-center items-center rounded-full bg-white bg-opacity-90 dark:bg-opacity-70"
         :class="[isRight ? 'mr-8' : 'ml-8']"
       >
-        <img :src="imgUrl" alt="" :width="imgSize" :height="imgSize" />
+        <img :src="imgUrl" alt="" :width="imgSize" :height="imgSize" loading="lazy" />
       </div>
     </div>
   </div>

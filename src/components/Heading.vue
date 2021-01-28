@@ -13,7 +13,6 @@
 
 <script>
 export default {
-  name: 'Heading',
   props: ['title', 'subtitle'],
 };
 </script>

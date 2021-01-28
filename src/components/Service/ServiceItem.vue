@@ -24,7 +24,6 @@
 <script>
 import Container from '../Container.vue';
 export default {
-  name: 'ServiceItem',
   components: { Container },
   props: {
     number: Number,

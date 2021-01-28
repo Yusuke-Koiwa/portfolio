@@ -35,7 +35,6 @@
 
 <script>
 export default {
-  name: 'Header',
   data() {
     return {
       menuOpen: false,

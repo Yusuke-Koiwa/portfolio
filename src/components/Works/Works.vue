@@ -11,7 +11,6 @@ import Container from '../Container.vue';
 import Heading from '../Heading.vue';
 import Slider from './Slider.vue';
 export default {
-  name: 'Works',
   components: { Container, Heading, Slider },
 };
 </script>

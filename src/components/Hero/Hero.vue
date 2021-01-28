@@ -8,13 +8,7 @@
       Expand the Possibilities
     </p>
 
-    <img
-      src="/static/img/hero/rocket@2x.png"
-      alt=""
-      class="rocket absolute bottom-0 left-0 h-auto"
-      width="600"
-      height="520"
-    />
+    <img src="/static/img/hero/rocket@2x.png" alt="" class="rocket absolute bottom-0 left-0 h-auto" width="600" height="520" />
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
       <ScrollMark />
@@ -25,7 +19,6 @@
 <script>
 import ScrollMark from './ScrollMark.vue';
 export default {
-  name: 'Hero',
   components: { ScrollMark },
   data() {
     return {

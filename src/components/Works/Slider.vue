@@ -71,7 +71,6 @@ import LinkButton from './LinkButton.vue';
 SwiperCore.use([Navigation]);
 
 export default {
-  name: 'Slider',
   components: {
     Swiper,
     SwiperSlide,

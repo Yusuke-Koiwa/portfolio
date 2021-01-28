@@ -1,23 +1,11 @@
 <template>
-  <button
-    @click="toggleTheme"
-    class="switch-wrapper relative bg-gray-400 shadow-inner focus:outline-none"
-  >
-    <img
-      :src="imgUrl"
-      width="35"
-      height="35"
-      loading="lazy"
-      :alt="imgAlt"
-      class="switch-btn absolute left-0 top-0"
-      :class="positionClass"
-    />
+  <button @click="toggleTheme" class="switch-wrapper relative bg-gray-400 shadow-inner focus:outline-none">
+    <img :src="imgUrl" width="35" height="35" loading="lazy" :alt="imgAlt" class="switch-btn absolute left-0 top-0" :class="positionClass" />
   </button>
 </template>
 
 <script>
 export default {
-  name: 'DarkSwitch',
   data() {
     return {
       positionClass: null,
@@ -31,10 +19,7 @@ export default {
     },
   },
   created() {
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.querySelector('html').classList.add('dark');
       this.$emit('toggleTheme', true);
     } else {

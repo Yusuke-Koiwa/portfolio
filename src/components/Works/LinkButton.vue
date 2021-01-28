@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  name: 'LinkButton',
   props: {
     url: String,
   },

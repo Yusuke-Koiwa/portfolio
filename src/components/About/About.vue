@@ -24,7 +24,6 @@ import Heading from '../Heading.vue';
 import Intro from './Intro.vue';
 import Planets from './Planets.vue';
 export default {
-  name: 'About',
   components: { Container, DarkSwitch, Heading, Intro, Planets },
   methods: {
     toggleTheme(dark) {

@@ -3,9 +3,3 @@
     <p>©︎ 2021 Koiwa’s Portfolio</p>
   </footer>
 </template>
-<script>
-export default {
-  name: 'Footer',
-};
-</script>
-<style scoped></style>

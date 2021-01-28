@@ -48,7 +48,6 @@ import Container from '../Container.vue';
 import Heading from '../Heading.vue';
 import ServiceItem from './ServiceItem.vue';
 export default {
-  name: 'Service',
   components: { Container, Heading, ServiceItem },
 };
 </script>

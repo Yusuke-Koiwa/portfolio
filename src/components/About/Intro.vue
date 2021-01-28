@@ -29,7 +29,6 @@
 <script>
 import IntroItem from './IntroItem.vue';
 export default {
-  name: 'Intro',
   components: { IntroItem },
   data() {
     return {

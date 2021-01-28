@@ -60,9 +60,6 @@
 import Container from '../Container.vue';
 import Heading from '../Heading.vue';
 export default {
-  name: 'Skills',
   components: { Heading, Container },
 };
 </script>
-
-<style></style>

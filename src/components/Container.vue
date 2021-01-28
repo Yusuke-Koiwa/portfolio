@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="Container mx-auto px-6">
     <slot />
   </div>

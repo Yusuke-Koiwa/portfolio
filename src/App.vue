@@ -1,5 +1,5 @@
 <template>
-  <div :class="bgClass" class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black">
+  <div :class="bgClass" class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black" style="min-width: 320px">
     <Header />
     <main>
       <Hero :darkTheme="darkTheme" />

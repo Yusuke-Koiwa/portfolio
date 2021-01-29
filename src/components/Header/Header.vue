@@ -1,13 +1,13 @@
 <template>
   <header class="fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
-    <nav class="w-full h-full flex justify-between items-center text-white">
-      <h1 class="font-heading text-4xl whitespace-nowrap">Koiwa's Portfolio</h1>
+    <nav class="nav w-full h-full mx-auto flex justify-between items-center text-white">
+      <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap">Koiwa's Portfolio</h1>
       <Menu :links="links" />
       <MobileMenu :menuOpen="menuOpen" :links="links" @clicked="toggleMenu" />
     </nav>
   </header>
   <transition name="fade" appear>
-    <ModalBack v-if="menuOpen" />
+    <ModalBack v-if="menuOpen" @click="menuOpen = !menuOpen" />
   </transition>
 </template>
 
@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+.nav {
+  max-width: 1920px;
+}
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;

@@ -7,13 +7,16 @@ module.exports = {
       md: '768px',
       lg: '960px',
       xl: '1024px',
+      '2xl': '1280px',
     },
     extend: {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
       },
       fontSize: {
+        '3.5xl': ['2rem', '2.25'],
         '4.5xl': ['2.5rem', '1.25'],
+        '7.5xl': ['5.25rem', '1'],
       },
       colors: {
         'c-gray': '#C3C3C3',

@@ -6,7 +6,7 @@
         :number="1"
         label="Webサイト制作"
         imgUrl="/static/img/service/landing_page.png"
-        :imgSize="200"
+        imgClass="img-lg"
         :isRight="false"
         class="relative z-10 mb-48"
         >ランディングページなどのwebサイト制作をおこないます。スマホやタブレット端末での表示に対するレスポンシブ化のほか、
@@ -14,20 +14,19 @@
       >
       <Service-item
         :number="2"
-        label="WordPressサイト制作/移行"
+        label="WordPress制作"
         imgUrl="/static/img/skills/wordpress@2x.png"
-        :imgSize="150"
+        imgClass="img-md"
         :isRight="true"
         class="relative z-10 mb-48"
-        >ブログやお知らせなど、更新が必要なWebサイトはWordPressで制作いたします。
-        既存WordPress移行やテーマのカスタマイズ、オリジナルテーマの制作が可能です。
+        >ブログやお知らせなど、更新が必要なWebサイトはWordPressで制作致します。 既存テーマのカスタマイズ、オリジナルテーマの制作が可能です。
         その他、サイトの高速化、セキュリティ対策、内部SEO対策などもお任せください。</Service-item
       >
       <Service-item
         :number="3"
         label="ECサイト構築"
         imgUrl="/static/img/service/online_shopping.png"
-        :imgSize="200"
+        imgClass="img-lg"
         :isRight="false"
         class="relative z-10"
         >Stripeを用いたクレジットカード決済機能の実装や、WordPressプラグインである

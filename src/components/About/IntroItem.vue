@@ -25,6 +25,6 @@ export default {
 }
 .rotate-line {
   width: 3px;
-  transform: translate(-5px, 12px) rotate(45deg);
+  transform: translate(-0.3rem, 0.75rem) rotate(45deg);
 }
 </style>

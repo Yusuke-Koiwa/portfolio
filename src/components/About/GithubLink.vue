@@ -3,7 +3,7 @@
     href="https://github.com/Yusuke-Koiwa"
     target="_blank"
     rel="noopener noreferrer"
-    class="button block w-60 h-14 border border-black shadow dark:border-white"
+    class="button block w-full mx-auto sm:mx-0 p-2 bg-white dark:bg-black border border-black shadow dark:border-white"
   >
     <div class="w-full h-full flex justify-center items-center">
       <img :src="imgUrl" width="45" height="45" alt="GitHubロゴ" class="mr-3" loading="lazy" />
@@ -43,7 +43,10 @@ export default {
 
 <style scoped>
 .tip {
-  transform: translate(-4px, -4px) rotate(-45deg);
+  transform: translate(-0.25rem, -0.25rem) rotate(-45deg);
+}
+.button {
+  max-width: 240px;
 }
 .button:focus {
   transform: translateY(1px);

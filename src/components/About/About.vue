@@ -1,14 +1,14 @@
 <template>
-  <section id="about" class="pt-14 pb-40">
+  <section id="about" class="pt-20 pb-40">
     <Container>
-      <div class="w-full h-20 flex justify-end items-center">
+      <div class="w-full h-20 mb-16 flex justify-end items-center">
         <Dark-switch @toggleTheme="toggleTheme" :darkTheme="darkTheme" />
       </div>
       <Heading title="ABOUT" subtitle="自己紹介" class="my-4" />
       <Rocket :darkTheme="darkTheme" />
-      <div class="flex">
-        <Intro :darkTheme="darkTheme" class="w-1/2" />
-        <Planets class="w-1/2" />
+      <div class="flex flex-col-reverse sm:flex-row">
+        <Intro :darkTheme="darkTheme" class="w-full sm:w-1/2" />
+        <Planets class="w-full sm:w-1/2 mb-8 sm:mb-0" />
       </div>
     </Container>
   </section>

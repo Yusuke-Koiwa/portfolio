@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="imgUrl" width="65" height="65" loading="lazy" alt="" class="transform rotate-90 mx-auto" />
+    <img :src="imgUrl" width="65" height="65" loading="lazy" alt="" class="transform rotate-90 mx-auto mb-8" />
   </div>
 </template>
 <script>

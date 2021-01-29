@@ -14,6 +14,7 @@ module.exports = {
         orbitron: ['Orbitron', 'sans-serif'],
       },
       fontSize: {
+        '1.5xl': ['1.35rem', '1.75'],
         '3.5xl': ['2rem', '2.25'],
         '4.5xl': ['2.5rem', '1.25'],
         '7.5xl': ['5.25rem', '1'],

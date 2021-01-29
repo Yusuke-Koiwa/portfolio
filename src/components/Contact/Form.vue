@@ -4,29 +4,29 @@
     method="post"
     target="submitted"
     @submit="success"
-    class="form pt-24 pb-4 bg-c-gray dark:bg-dark-gray dark:text-white"
+    class="form pt-24 px-7 pb-4 bg-c-gray dark:bg-dark-gray dark:text-white"
   >
-    <Container>
+    <div class="container mx-auto">
       <p class="form-description w-full mx-auto mb-16 text-2xl leading-10">
         お仕事のご依頼、お問い合わせなどはこちらのフォームよりお気軽にお問い合わせください。内容を確認の上、ご返事いたします。
       </p>
-      <div class="flex justify-center items-center mb-16">
-        <p class="field-label mr-5 flex justify-center items-center">
-          <span class="text-2xl text-center font-semibold">お名前</span>
-          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-sm font-semibold bg-red-400">必須</span>
+      <div class="flex flex-col md:flex-row justify-center md:items-center mb-16">
+        <p class="field-label mr-5 mb-2 md:mb-0 flex md:justify-center items-center">
+          <span class="text-2xl font-semibold">お名前</span>
+          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-base md:text-sm font-semibold bg-red-400">必須</span>
         </p>
         <input
           type="text"
           name="entry.1038968356"
-          class="input-text text-xl px-7 text-black focus:outline-none focus:ring focus:border-blue-300"
+          class="input-text text-1.5xl md:text-xl px-7 text-black focus:outline-none focus:ring focus:border-blue-300"
           placeholder="お名前を入力してください。"
           required
         />
       </div>
-      <div class="flex justify-center items-center mb-16">
-        <p class="field-label mr-5 flex justify-center items-center">
-          <span class="text-2xl text-center font-semibold">メールアドレス</span>
-          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-sm font-semibold bg-red-400">必須</span>
+      <div class="flex flex-col md:flex-row justify-center md:items-center mb-16">
+        <p class="field-label mr-5 mb-2 md:mb-0 flex md:justify-center items-center">
+          <span class="text-2xl font-semibold">メールアドレス</span>
+          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-base md:text-sm font-semibold bg-red-400">必須</span>
         </p>
         <input
           type="email"
@@ -36,10 +36,10 @@
           required
         />
       </div>
-      <div class="flex justify-center items-center mb-16">
-        <p class="field-label mr-5 flex justify-center items-center">
-          <span class="text-2xl text-center font-semibold">電話番号</span>
-          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-sm font-semibold bg-gray-400">任意</span>
+      <div class="flex flex-col md:flex-row justify-center md:items-center mb-16">
+        <p class="field-label mr-5 mb-2 md:mb-0 flex md:justify-center items-center">
+          <span class="text-2xl font-semibold">電話番号</span>
+          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-base md:text-sm font-semibold bg-gray-400">任意</span>
         </p>
         <input
           type="tel"
@@ -48,10 +48,10 @@
           placeholder="電話番号を入力してください。"
         />
       </div>
-      <div class="flex justify-center items-center mb-16">
-        <p class="field-label mr-5 flex justify-center items-center">
-          <span class="text-2xl text-center font-semibold">お問い合せ内容</span>
-          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-sm font-semibold bg-red-400">必須</span>
+      <div class="flex flex-col md:flex-row justify-center md:items-center mb-16">
+        <p class="field-label mr-5 mb-2 md:mb-0 flex md:justify-center items-center">
+          <span class="text-2xl font-semibold">お問い合せ内容</span>
+          <span class="ml-2 mb-1 px-1 py-0.5 rounded text-white text-base md:text-sm font-semibold bg-red-400">必須</span>
         </p>
         <textarea
           name="entry.2102755233"
@@ -61,7 +61,7 @@
         />
       </div>
       <SubmitBtn :submitted="submitted" />
-    </Container>
+    </div>
   </form>
 </template>
 
@@ -91,15 +91,22 @@ export default {
 .field-label {
   width: 215px;
 }
-.input-text {
-  width: calc(100% - 251px);
+.input-text,
+.input-textarea {
+  width: 100%;
   max-width: 855px;
-  height: 83px;
+}
+@media screen and (min-width: 767px) {
+  .input-text,
+  .input-textarea {
+    width: calc(100% - 251px);
+  }
+}
+.input-text {
+  height: 80px;
 }
 .input-textarea {
-  width: calc(100% - 251px);
-  max-width: 855px;
-  height: 273px;
+  height: 270px;
   resize: none;
 }
 </style>

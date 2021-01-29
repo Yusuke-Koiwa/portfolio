@@ -4,7 +4,7 @@
     <main>
       <Hero :darkTheme="darkTheme" />
       <About :darkTheme="darkTheme" @toggleTheme="toggleTheme" />
-      <Skills />
+      <Skills :darkTheme="darkTheme" />
       <Service />
       <Works />
       <Contact :darkTheme="darkTheme" />

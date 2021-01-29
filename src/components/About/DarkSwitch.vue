@@ -36,7 +36,6 @@ export default {
       }
     },
   },
-
   watch: {
     darkTheme: function (dark) {
       if (dark) {

@@ -34,7 +34,7 @@
           <figcaption class="text-2xl text-center font-semibold">PHP</figcaption>
         </figure>
         <figure class="w-1/4 pt-12 bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70">
-          <img src="/static/img/skills/wordpress@2x.png" width="80" height="80" alt="" loading="lazy" class="w-20 h-auto mx-auto mb-10" />
+          <WPLogo :darkTheme="darkTheme" />
           <figcaption class="text-2xl text-center font-semibold">WordPress</figcaption>
         </figure>
         <figure class="w-1/4 pb-12 bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70">
@@ -59,7 +59,11 @@
 <script>
 import Container from '../Container.vue';
 import Heading from '../Heading.vue';
+import WPLogo from './WPLogo.vue';
 export default {
-  components: { Heading, Container },
+  components: { Heading, Container, WPLogo },
+  props: {
+    darkTheme: Boolean,
+  },
 };
 </script>

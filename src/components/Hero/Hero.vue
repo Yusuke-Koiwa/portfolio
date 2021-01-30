@@ -1,5 +1,5 @@
 <template>
-  <section class="hero relative w-full h-screen px-6 bg-cover bg-no-repeat bg-center">
+  <section id="top" class="hero relative w-full h-screen px-6 bg-cover bg-no-repeat bg-center">
     <HeroWave :darkTheme="darkTheme" />
     <div class="absolute top-0 right-0 bottom-0 left-0 flex items-center z-10">
       <div class="w-full mx-auto px-6" style="max-width: 1560px">

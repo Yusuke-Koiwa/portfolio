@@ -8,7 +8,7 @@
       <Service />
       <Works />
       <Contact :darkTheme="darkTheme" />
-      <Footer />
+      <Footer :darkTheme="darkTheme" />
     </main>
   </div>
 </template>

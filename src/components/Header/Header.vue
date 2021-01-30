@@ -1,7 +1,7 @@
 <template>
   <header class="fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
     <nav class="nav w-full h-full mx-auto flex justify-between items-center text-white">
-      <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap">Koiwa's Portfolio</h1>
+      <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap"><a href="#top" v-smooth-scroll>Koiwa's Portfolio</a></h1>
       <Menu :links="links" />
       <MobileMenu :menuOpen="menuOpen" :links="links" @clicked="toggleMenu" />
     </nav>
@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
 .nav {
-  max-width: 1920px;
+  max-width: 1280px;
 }
 .fade-enter-from,
 .fade-leave-to {

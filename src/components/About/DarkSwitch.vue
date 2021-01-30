@@ -75,6 +75,6 @@ export default {
 
 .position-right {
   transform: translateX(55px);
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
 }
 </style>

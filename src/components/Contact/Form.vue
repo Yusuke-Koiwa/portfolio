@@ -18,7 +18,7 @@
         <input
           type="text"
           name="entry.1038968356"
-          class="input-text text-1.5xl md:text-xl px-7 text-black focus:outline-none focus:ring focus:border-blue-300"
+          class="input-text text-1.5xl md:text-xl px-7 text-black dark:bg-gray-200 focus:outline-none focus:ring focus:border-blue-300"
           placeholder="お名前を入力してください。"
           required
         />
@@ -31,7 +31,7 @@
         <input
           type="email"
           name="entry.1056754541"
-          class="input-text text-xl px-7 text-black focus:outline-none focus:ring focus:border-blue-300"
+          class="input-text text-xl px-7 text-black dark:bg-gray-200 focus:outline-none focus:ring focus:border-blue-300"
           placeholder="メールアドレスを入力してください。"
           required
         />
@@ -44,7 +44,7 @@
         <input
           type="tel"
           name="entry.1482978806"
-          class="input-text text-xl px-7 text-black focus:outline-none focus:ring focus:border-blue-300"
+          class="input-text text-xl px-7 text-black dark:bg-gray-200 focus:outline-none focus:ring focus:border-blue-300"
           placeholder="電話番号を入力してください。"
         />
       </div>
@@ -55,7 +55,7 @@
         </p>
         <textarea
           name="entry.2102755233"
-          class="input-textarea text-xl p-7 text-black focus:outline-none focus:ring focus:border-blue-300"
+          class="input-textarea text-xl p-7 text-black dark:bg-gray-200 focus:outline-none focus:ring focus:border-blue-300"
           placeholder="お問い合わせ内容を入力してください。"
           required
         />

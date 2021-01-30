@@ -3,7 +3,7 @@
     type="submit"
     value="送信"
     :disabled="submitted"
-    class="form-submit block mx-auto cursor-pointer text-2xl font-semibold shadow text-black focus:outline-none bg-white disabled:opacity-50 disabled:cursor-default"
+    class="form-submit block mx-auto cursor-pointer text-2xl font-semibold shadow text-black focus:outline-none bg-white dark:bg-gray-200 disabled:opacity-50 disabled:cursor-default"
   />
 </template>
 

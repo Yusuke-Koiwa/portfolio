@@ -10,6 +10,9 @@ module.exports = {
       '2xl': '1280px',
     },
     extend: {
+      spacing: {
+        18: '4.375rem',
+      },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
       },
@@ -25,12 +28,14 @@ module.exports = {
       },
       boxShadow: {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.3)',
+        white: '0 1px 3px 0 rgba(255, 255, 255, 0.5)',
       },
     },
   },
   variants: {
     extend: {
       backgroundOpacity: ['dark'],
+      boxShadow: ['dark'],
       opacity: ['disabled'],
       cursor: ['disabled'],
     },

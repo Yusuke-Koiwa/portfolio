@@ -1,7 +1,7 @@
 <template>
   <ul class="hidden lg:flex font-heading text-xl">
     <li v-for="link in links" :key="link.name" class="px-4">
-      <a :href="link.url">{{ link.name }}</a>
+      <a :href="link.url" v-smooth-scroll>{{ link.name }}</a>
     </li>
   </ul>
 </template>

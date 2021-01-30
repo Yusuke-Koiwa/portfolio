@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './index.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import './index.css';
+import VueSmoothScroll from 'vue3-smooth-scroll';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(VueSmoothScroll, {
+  updateHistory: false,
+});
+app.mount('#app');

@@ -2,10 +2,12 @@
   <div
     class="service-item flex items-center p-8 bg-c-gray dark:text-white dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"
     :class="[isRight ? 'margin-left' : 'margin-right']"
+    data-delighter
   >
     <div
       class="service-item-inner mx-auto flex flex-col-reverse md:flex-row justify-between items-center"
       :class="[isRight ? 'md:flex-row-reverse' : '']"
+      data-delighter
     >
       <div class="service-text">
         <h3 class="mb-7 text-center" :class="[isRight ? 'md:text-right' : 'md:text-left']">
@@ -41,9 +43,24 @@ export default {
 <style scoped>
 .service-item {
   min-height: 450px;
+  transition: transform 0.5s ease-out;
+}
+.service-item.margin-right {
+  transform: translateX(-100%);
+}
+.service-item.margin-left {
+  transform: translateX(100%);
+}
+.service-item.started {
+  transform: translateX(0);
 }
 .service-item-inner {
   max-width: 1000px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out 0.4s;
+}
+.service-item-inner.started {
+  opacity: 1;
 }
 .margin-right {
   margin-right: 7.5%;

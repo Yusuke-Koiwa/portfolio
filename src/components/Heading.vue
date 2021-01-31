@@ -2,10 +2,8 @@
   <div class="heading mx-auto text-center dark:text-white bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70">
     <h2 class="font-heading text-4xl">{{ title }}</h2>
     <div class="relative w-full">
-      <div class="heading-line bg-black dark:bg-white my-1.5"></div>
-      <div
-        class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-black dark:border-white"
-      ></div>
+      <div class="line bg-black dark:bg-white my-1.5" data-delighter></div>
+      <div class="circle absolute right-0 top-1/2 w-8 h-8 rounded-full border-2 border-black dark:border-white" data-delighter></div>
     </div>
     <p class="text-xl font-semibold">{{ subtitle }}</p>
   </div>
@@ -24,7 +22,23 @@ export default {
 .heading {
   width: 210px;
 }
-.heading-line {
+.line {
+  width: 0;
   height: 3px;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.line.started {
+  width: 100%;
+  opacity: 1;
+}
+.circle {
+  transform: translate(50%, -50%) scale(0);
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.circle.started {
+  transform: translate(50%, -50%) scale(1);
+  opacity: 1;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="slider-wrapper">
     <div class="relative">
       <div class="slider-bg absolute bottom-0 top-0 left-0 right-0 bg-c-gray dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"></div>
-      <Container class="md:pl-16 2xl:pl-6">
+      <Container class="slide-container md:pl-16 2xl:pl-6" data-delighter>
         <swiper
           ref="mySwiper"
           :slides-per-view="1"
@@ -107,6 +107,13 @@ export default {
 .swiper-button-next,
 .swiper-button-prev {
   visibility: hidden;
+}
+.slide-container {
+  transform: translateX(100%);
+  transition: transform 0.75s ease-in-out;
+}
+.slide-container.started {
+  transform: translateX(0);
 }
 </style>
 

@@ -14,20 +14,6 @@
         >
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/static/img/works/works01@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
-              <div class="slide-text mx-auto md:px-6">
-                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Anytime Nature</h3>
-                <p class="mb-5 text-lg">
-                  写真を投稿できるWebアプリケーションです。 バックエンドのサーバー処理から、フロント
-                  エンドの実装まで全て個人で開発しました。バックエンドはRuby on Rails、画像の保存は AWS S3を使用しています。
-                </p>
-              </div>
-            </div>
-            <Link-button :url="'https://anytime-nature.herokuapp.com/'" />
-          </swiper-slide>
-
-          <swiper-slide class="flex flex-col h-auto justify-between">
-            <div>
               <img src="/static/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ（模写×WordPress）</h3>
@@ -53,6 +39,20 @@
               </div>
             </div>
             <Link-button :url="'https://iwa-portfolio.com/'" />
+          </swiper-slide>
+
+          <swiper-slide class="flex flex-col h-auto justify-between">
+            <div>
+              <img src="/static/img/works/works01@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <div class="slide-text mx-auto md:px-6">
+                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Anytime Nature</h3>
+                <p class="mb-5 text-lg">
+                  写真を投稿できるWebアプリケーションです。 バックエンドのサーバー処理から、フロント
+                  エンドの実装まで全て個人で開発しました。バックエンドはRuby on Rails、画像の保存は AWS S3を使用しています。
+                </p>
+              </div>
+            </div>
+            <Link-button :url="'https://anytime-nature.herokuapp.com/'" />
           </swiper-slide>
         </swiper>
       </Container>
@@ -91,8 +91,10 @@ export default {
 </script>
 
 <style>
-.slider-wrapper {
-  padding-left: 11%;
+@media screen and (min-width: 768px) {
+  .slider-wrapper {
+    padding-left: 11%;
+  }
 }
 .slide-text {
   max-width: 500px;

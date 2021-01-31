@@ -7,7 +7,7 @@
         width="60"
         height="60"
         loading="lazy"
-        alt=""
+        alt="TOPへ戻る"
         class="w-16 h-auto transform -rotate-45"
       />
       <img
@@ -16,10 +16,12 @@
         width="60"
         height="60"
         loading="lazy"
-        alt=""
+        alt="TOPへ戻る"
         class="w-16 h-auto transform -rotate-45"
       />
-      <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs font-semibold text-white dark:text-black">TOP</p>
+      <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs font-semibold text-center text-white dark:text-black">
+        TOP
+      </p>
     </div>
   </a>
 </template>

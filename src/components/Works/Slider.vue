@@ -21,7 +21,7 @@
                   実際の案件で使用されたXDデザインを元に模写したサイトです。WordPressサイト化し、ニュース、販売スケジュール、キャストなどをクライアント様側
                   で簡単に更新できるようにしました。サイトの確認には認証が必要です。
                 </p>
-                <p class="mb-3">ユーザー名：iwa<br />パスワード：iwa</p>
+                <p class="mb-3">ユーザー名：koiwa<br />パスワード：koiwaworks</p>
               </div>
             </div>
             <Link-button :url="'https://mb.iwa-portfolio.com/'" />
@@ -35,7 +35,7 @@
                 <p class="slide-text mb-3 text-lg">
                   WordPressを用いて構築した架空の企業サイトです。XDデザインを元にコーディングを行なっております。ブログ、お知らせ、料金プランなどをクライアント様側で簡単に更新できるようにしました。サイトの確認には認証が必要です。
                 </p>
-                <p class="mb-3">ユーザー名：iwa<br />パスワード：iwa</p>
+                <p class="mb-3">ユーザー名：koiwa<br />パスワード：koiwaworks</p>
               </div>
             </div>
             <Link-button :url="'https://iwa-portfolio.com/'" />

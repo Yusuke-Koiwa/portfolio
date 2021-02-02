@@ -1,13 +1,11 @@
 <template>
   <div
-    class="service-item flex items-center p-8 bg-c-gray dark:text-white dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"
+    class="js-step service-item flex items-center p-8 bg-c-gray dark:text-white dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"
     :class="[isRight ? 'margin-left' : 'margin-right']"
-    data-delighter
   >
     <div
       class="service-item-inner mx-auto flex flex-col-reverse md:flex-row justify-between items-center"
       :class="[isRight ? 'md:flex-row-reverse' : '']"
-      data-delighter
     >
       <div class="service-text">
         <h3 class="mb-7 text-center" :class="[isRight ? 'md:text-right' : 'md:text-left']">
@@ -51,7 +49,7 @@ export default {
 .service-item.margin-left {
   transform: translateX(100%);
 }
-.service-item.started {
+.service-item.active {
   transform: translateX(0);
 }
 .service-item-inner {
@@ -59,7 +57,7 @@ export default {
   opacity: 0;
   transition: opacity 0.3s ease-out 0.4s;
 }
-.service-item-inner.started {
+.service-item.active .service-item-inner {
   opacity: 1;
 }
 .margin-right {

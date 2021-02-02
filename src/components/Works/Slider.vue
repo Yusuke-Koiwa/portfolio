@@ -2,7 +2,7 @@
   <div class="slider-wrapper">
     <div class="relative">
       <div class="slider-bg absolute bottom-0 top-0 left-0 right-0 bg-c-gray dark:bg-dark-gray bg-opacity-90 dark:bg-opacity-90"></div>
-      <Container class="slide-container md:pl-16 2xl:pl-6" data-delighter>
+      <Container class="js-step slide-container md:pl-16 2xl:pl-6">
         <swiper
           ref="mySwiper"
           :slides-per-view="1"
@@ -112,7 +112,7 @@ export default {
   transform: translateX(100%);
   transition: transform 0.75s ease-in-out;
 }
-.slide-container.started {
+.slide-container.active {
   transform: translateX(0);
 }
 </style>

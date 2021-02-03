@@ -56,7 +56,6 @@ export default {
       this.processing = true;
       setTimeout(() => {
         const currentScroll = window.scrollY;
-        console.log(currentScroll, this.lastScroll);
         if (!this.menuOpen && currentScroll < this.lastScroll - 20) {
           this.isActive = true;
         }

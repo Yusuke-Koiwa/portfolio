@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
+  <header class="header fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black" :class="{ active: isActive }">
     <nav class="nav w-full h-full mx-auto flex justify-between items-center text-white">
       <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap"><a href="#top" v-smooth-scroll>Koiwa's Portfolio</a></h1>
       <Menu :links="links" />
@@ -19,7 +19,10 @@ export default {
   components: { Menu, MobileMenu, ModalBack },
   data() {
     return {
+      isActive: true,
       menuOpen: false,
+      lastScroll: 0,
+      processing: false,
       links: [
         {
           name: 'ABOUT',
@@ -48,11 +51,38 @@ export default {
     toggleMenu: function () {
       this.menuOpen = !this.menuOpen;
     },
+    handleScroll: function () {
+      if (this.processing) return;
+      this.processing = true;
+      setTimeout(() => {
+        const currentScroll = window.scrollY;
+        console.log(currentScroll, this.lastScroll);
+        if (!this.menuOpen && currentScroll < this.lastScroll - 20) {
+          this.isActive = true;
+        }
+        if (!this.menuOpen && currentScroll > this.lastScroll + 20) {
+          this.isActive = false;
+        }
+        this.lastScroll = currentScroll;
+        this.processing = false;
+      }, 300);
+    },
+  },
+  mounted() {
+    this.lastScroll = window.scrollY;
+    window.addEventListener('scroll', this.handleScroll);
   },
 };
 </script>
 
 <style scoped>
+.header {
+  transform: translateY(-125%);
+  transition: transform 0.5s ease-out;
+}
+.header.active {
+  transform: none;
+}
 .nav {
   max-width: 1280px;
 }

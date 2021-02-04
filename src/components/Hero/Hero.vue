@@ -1,5 +1,5 @@
 <template>
-  <section id="top" class="js-rellax hero relative w-full h-screen px-6 bg-fixed bg-contain bg-repeat bg-center" data-rellax-speed="2">
+  <section id="top" class="hero relative w-full h-screen px-6 bg-fixed bg-contain bg-repeat bg-center">
     <HeroWave :darkTheme="darkTheme" />
     <div class="absolute top-0 right-0 bottom-0 left-0 flex items-center z-10">
       <div class="w-full mx-auto px-6" style="max-width: 1560px">
@@ -9,14 +9,7 @@
       </div>
     </div>
 
-    <img
-      src="/static/img/hero/rocket@2x.png"
-      alt=""
-      class="rocket js-rellax absolute left-0 -ml-16 h-auto"
-      width="600"
-      height="520"
-      data-rellax-speed="5"
-    />
+    <img src="/static/img/hero/rocket@2x.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
       <ScrollMark />

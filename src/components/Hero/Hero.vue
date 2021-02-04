@@ -3,10 +3,7 @@
     <HeroWave :darkTheme="darkTheme" />
     <div class="absolute top-0 right-0 bottom-0 left-0 flex items-center z-10">
       <div class="w-full mx-auto px-6" style="max-width: 1560px">
-        <p
-          class="js-rellax catch-copy font-heading text-6xl sm:text-7xl 2xl:text-7.5xl 2xl:whitespace-nowrap text-right dark:text-white"
-          data-rellax-speed="2"
-        >
+        <p class="catch-copy font-heading text-6xl sm:text-7xl 2xl:text-7.5xl 2xl:whitespace-nowrap text-right dark:text-white">
           Expand the Possibilities
         </p>
       </div>
@@ -18,11 +15,11 @@
       class="rocket js-rellax absolute left-0 -ml-16 h-auto"
       width="600"
       height="520"
-      data-rellax-speed="7.5"
+      data-rellax-speed="5"
     />
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
-      <ScrollMark class="js-rellax" data-rellax-speed="2" />
+      <ScrollMark />
     </div>
   </section>
 </template>

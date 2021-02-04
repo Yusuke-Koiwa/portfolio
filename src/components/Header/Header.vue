@@ -1,5 +1,5 @@
 <template>
-  <header class="absolute lg:fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
+  <header class="header absolute lg:fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
     <nav class="nav w-full h-full mx-auto flex justify-between items-center text-white">
       <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap"><a href="#top" v-smooth-scroll>Koiwa's Portfolio</a></h1>
       <Menu :links="links" />
@@ -53,6 +53,10 @@ export default {
 </script>
 
 <style scoped>
+.header {
+  transform: translateY(-125%);
+  animation: slide-down 0.5s ease-out 1s forwards;
+}
 .nav {
   max-width: 1280px;
 }
@@ -63,5 +67,10 @@ export default {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s;
+}
+@keyframes slide-down {
+  100% {
+    transform: none;
+  }
 }
 </style>

@@ -12,7 +12,7 @@
     <img src="/static/img/hero/rocket@2x.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
-      <ScrollMark />
+      <ScrollMark class="scroll-mark" />
     </div>
   </section>
 </template>
@@ -38,20 +38,27 @@ export default {
   padding-top: 100px;
   text-shadow: 1px 0 10px #fff;
   line-height: 1.25;
+  opacity: 0;
+  transform: translateY(25%);
+  animation: slide 0.5s ease-in forwards;
 }
 .rocket {
   top: 20%;
   width: 90%;
   max-width: 600px;
-  /* animation: hovering 2.5s ease-in-out infinite alternate; */
+  opacity: 0;
+  transform: translate(-10%, 25%);
+  animation: slide 0.5s ease-in 0.75s forwards;
 }
-@keyframes hovering {
-  0% {
-    transform: translate(0, 0);
-  }
-
+.scroll-mark {
+  opacity: 0;
+  transform: translateY(-25%);
+  animation: slide 0.5s ease-in 1.5s forwards;
+}
+@keyframes slide {
   100% {
-    transform: translate(-5px, 20px);
+    transform: none;
+    opacity: 1;
   }
 }
 </style>

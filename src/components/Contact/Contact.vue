@@ -4,7 +4,7 @@
     <WaveImg :darkTheme="darkTheme" />
     <Form :submitted="submitted" @success="toggleSubmit" />
     <transition name="fade" @before-enter="beforeEnter" @enter="enter" appear>
-      <Submitted v-if="submitted" :submitted="submitted" />
+      <Submitted v-if="submitted" />
     </transition>
     <iframe name="submitted" id="submitted" class="hidden"></iframe>
   </section>

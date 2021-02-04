@@ -7,14 +7,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    submitted: Boolean,
-  },
-};
-</script>
-
 <style scoped>
 .submitted-message {
   transition: height 0.5s ease-in;

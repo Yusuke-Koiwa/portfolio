@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="pt-24">
+  <section id="contact" class="pt-36">
     <Heading title="Contact" subtitle="お問い合わせ" class="mb-7" />
     <WaveImg :darkTheme="darkTheme" />
     <Form :submitted="submitted" @success="toggleSubmit" />

@@ -8,7 +8,7 @@
           :slides-per-view="1"
           :space-between="0"
           :loop="true"
-          :breakpoints="{ 768: { slidesPerView: 2, spaceBetween: 0 } }"
+          :breakpoints="{ 768: { slidesPerView: 2, spaceBetween: 0, loop: true }, 1540: { slidesPerView: 3, spaceBetween: 0, loop: true } }"
           navigation
           class="dark:text-white"
         >
@@ -61,7 +61,7 @@
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Koiwa's Portfolio</h3>
                 <p class="mb-5 text-lg">
-                  当ポートフォリオサイト。モダンなJavaScriptフレームワークである、Vue.jsを用いて作成。ダークモード切替え機能や、スクロール検知でのアニメーション表示、Googleフォームと連携したお問合せフォームの設置などを実装しています。
+                  当ポートフォリオサイト。JavaScriptフレームワークのVue.jsを用いて作成。ダークモード切替え機能や、スクロール検知でのアニメーション表示、Googleフォームと連携したお問合せフォームの設置などを実装しています。
                 </p>
               </div>
             </div>

@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .header {
   transform: translateY(-125%);
-  animation: slide-down 0.5s ease-out 1s forwards;
+  animation: slide-down 0.75s ease-out 1.5s forwards;
 }
 .nav {
   max-width: 1280px;

@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .service-item {
   min-height: 450px;
-  transition: transform 0.5s ease-out;
+  transition: transform 0.75s ease-out;
 }
 .service-item.margin-right {
   transform: translateX(-100%);
@@ -55,7 +55,7 @@ export default {
 .service-item-inner {
   max-width: 1000px;
   opacity: 0;
-  transition: opacity 0.3s ease-out 0.4s;
+  transition: opacity 0.3s ease-out 0.75s;
 }
 .service-item.active .service-item-inner {
   opacity: 1;

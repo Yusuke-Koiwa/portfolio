@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mobile-menu lg:hidden absolute top-0 right-0 shadow overflow-hidden bg-c-gray dark:bg-dark-gray"
+    class="mobile-menu lg:hidden fixed top-0 right-0 shadow overflow-hidden bg-c-gray dark:bg-dark-gray"
     :class="[menuOpen ? 'opened' : 'w-24 h-24']"
   >
     <button @click="clicked" class="absolute top-6 right-5 focus:outline-none" style="width: 24px; height: 24px">

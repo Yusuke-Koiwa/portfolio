@@ -16,12 +16,11 @@
             <div>
               <img src="/static/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
-                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ（模写×WordPress）</h3>
+                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ</h3>
                 <p class="mb-3 text-lg">
-                  実際の案件で使用されたXDデザインを元に模写したサイトです。WordPressサイト化し、ニュース、販売スケジュール、キャストなどをクライアント様側
-                  で簡単に更新できるようにしました。サイトの確認には認証が必要です。
+                  実際の案件で使用されたデザインカンプを元に模写したサイトです。ニュース、販売スケジュールなどをWordPress管理画面から更新できます。
                 </p>
-                <p class="mb-3">ユーザー名：koiwa<br />パスワード：koiwaworks</p>
+                <p class="mb-3">サイトの確認には認証が必要です。<br />ユーザー名：koiwa<br />パスワード：koiwaworks</p>
               </div>
             </div>
             <Link-button :url="'https://mb.iwa-portfolio.com/'" />
@@ -31,11 +30,11 @@
             <div>
               <img src="/static/img/works/works03@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
-                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Engress（WordPress架空企業サイト）</h3>
+                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Engress</h3>
                 <p class="slide-text mb-3 text-lg">
-                  WordPressを用いて構築した架空の企業サイトです。XDデザインを元にコーディングを行なっております。ブログ、お知らせ、料金プランなどをクライアント様側で簡単に更新できるようにしました。サイトの確認には認証が必要です。
+                  WordPressを用いた企業サイトの構築例。Xdデザインカンプを元にコーディングを行ないました。ブログやお知らせの記事をWordPress管理画面から投稿できます。
                 </p>
-                <p class="mb-3">ユーザー名：koiwa<br />パスワード：koiwaworks</p>
+                <p class="mb-3">サイトの確認には認証が必要です。<br />ユーザー名：koiwa<br />パスワード：koiwaworks</p>
               </div>
             </div>
             <Link-button :url="'https://iwa-portfolio.com/'" />
@@ -47,12 +46,25 @@
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Anytime Nature</h3>
                 <p class="mb-5 text-lg">
-                  写真を投稿できるWebアプリケーションです。 バックエンドのサーバー処理から、フロント
-                  エンドの実装まで全て個人で開発しました。バックエンドはRuby on Rails、画像の保存は AWS S3を使用しています。
+                  「いつでも自然を」をテーマに、自然に関する写真をユーザーが投稿できるWebアプリケーションです。
+                  投稿された写真にコメントやいいねを送ったり、気に入ったユーザーをフォローできる機能もあります。
+                  バックエンドからフロントエンドの実装まで全て個人で開発しました。
                 </p>
               </div>
             </div>
             <Link-button :url="'https://anytime-nature.herokuapp.com/'" />
+          </swiper-slide>
+
+          <swiper-slide class="flex flex-col h-auto justify-between">
+            <div>
+              <img src="/static/img/works/works04@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <div class="slide-text mx-auto md:px-6">
+                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Koiwa's Portfolio</h3>
+                <p class="mb-5 text-lg">
+                  当ポートフォリオサイト。モダンなJavaScriptフレームワークである、Vue.jsを用いて作成。ダークモード切替え機能や、スクロール検知でのアニメーション表示、Googleフォームと連携したお問合せフォームの設置などを実装しています。
+                </p>
+              </div>
+            </div>
           </swiper-slide>
         </swiper>
       </Container>
@@ -98,11 +110,6 @@ export default {
 }
 .slide-text {
   max-width: 500px;
-}
-@media screen and (min-width: 768px) {
-  .slide-heading {
-    min-height: 4rem;
-  }
 }
 .swiper-button-next,
 .swiper-button-prev {

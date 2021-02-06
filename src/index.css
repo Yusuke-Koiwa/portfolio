@@ -43,3 +43,7 @@ button {
 .font-heading {
   @apply font-orbitron font-bold;
 }
+
+.bg-c-transition {
+  transition: background-color 0.75s;
+}

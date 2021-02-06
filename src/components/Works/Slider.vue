@@ -8,24 +8,10 @@
           :slides-per-view="1"
           :space-between="0"
           :loop="true"
-          :breakpoints="{ 768: { slidesPerView: 2, spaceBetween: 0, loop: true }, 1540: { slidesPerView: 3, spaceBetween: 0, loop: true } }"
+          :breakpoints="{ 768: { slidesPerView: 2 } }"
           navigation
           class="dark:text-white"
         >
-          <swiper-slide class="flex flex-col h-auto justify-between">
-            <div>
-              <img src="/static/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
-              <div class="slide-text mx-auto md:px-6">
-                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ</h3>
-                <p class="mb-3 text-lg">
-                  実際の案件で使用されたデザインカンプを元に模写したサイトです。ニュース、販売スケジュールなどをWordPress管理画面から更新できます。
-                </p>
-                <p class="mb-3">サイトの確認には認証が必要です。<br />ユーザー名：koiwa<br />パスワード：koiwaworks</p>
-              </div>
-            </div>
-            <Link-button :url="'https://mb.iwa-portfolio.com/'" />
-          </swiper-slide>
-
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <img src="/static/img/works/works03@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
@@ -38,6 +24,20 @@
               </div>
             </div>
             <Link-button :url="'https://iwa-portfolio.com/'" />
+          </swiper-slide>
+
+          <swiper-slide class="flex flex-col h-auto justify-between">
+            <div>
+              <img src="/static/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <div class="slide-text mx-auto md:px-6">
+                <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ</h3>
+                <p class="mb-3 text-lg">
+                  実際の案件で使用されたデザインカンプを元に模写したサイトです。ニュース、販売スケジュールなどをWordPress管理画面から更新できます。
+                </p>
+                <p class="mb-3">サイトの確認には認証が必要です。<br />ユーザー名：koiwa<br />パスワード：koiwaworks</p>
+              </div>
+            </div>
+            <Link-button :url="'https://mb.iwa-portfolio.com/'" />
           </swiper-slide>
 
           <swiper-slide class="flex flex-col h-auto justify-between">

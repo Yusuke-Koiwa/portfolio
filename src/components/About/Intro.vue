@@ -1,8 +1,8 @@
 <template>
-  <div class="p-4 bg-white dark:bg-black dark:text-white bg-opacity-70 dark:bg-opacity-70">
+  <div class="p-4 bg-white dark:bg-black dark:text-white bg-opacity-70 dark:bg-opacity-70 bg-c-transition">
     <IntroItem text="小岩 裕介" class="text-3xl" />
     <IntroItem text="フロントエンドエンジニア" class="text-2xl" />
-    <p class="text-lg mb-14">
+    <p class="text-xl mb-14">
       千葉県出身、1993年生まれ。<br />
       東京都内でWebエンジニアとして活動中。<br />
       ホームページ制作や、WordPressサイト構築をメインに承っております。<br />

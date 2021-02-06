@@ -1,5 +1,5 @@
 <template>
-  <div :class="bgClass" class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black" style="min-width: 320px">
+  <div :class="bgClass" class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black bg-c-transition" style="min-width: 320px">
     <Header />
     <main>
       <Hero :darkTheme="darkTheme" />
@@ -8,8 +8,8 @@
       <Service />
       <Works />
       <Contact :darkTheme="darkTheme" />
-      <Footer :darkTheme="darkTheme" />
     </main>
+    <Footer :darkTheme="darkTheme" />
   </div>
 </template>
 

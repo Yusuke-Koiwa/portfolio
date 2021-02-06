@@ -1,5 +1,5 @@
 <template>
-  <div class="heading mx-auto text-center dark:text-white bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70">
+  <div class="heading mx-auto text-center dark:text-white bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70 bg-c-transition">
     <h2 class="font-heading text-4xl">{{ title }}</h2>
     <div class="relative w-full">
       <div class="js-step line bg-black dark:bg-white my-1.5"></div>

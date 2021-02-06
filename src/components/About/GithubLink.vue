@@ -3,7 +3,7 @@
     href="https://github.com/Yusuke-Koiwa"
     target="_blank"
     rel="noopener noreferrer"
-    class="button block w-full mx-auto sm:mx-0 p-2 bg-white dark:bg-black border border-black shadow dark:border-white dark:shadow-white"
+    class="button block w-full mx-auto sm:mx-0 p-2 bg-white dark:bg-black border border-black shadow dark:border-white dark:shadow-white bg-c-transition"
   >
     <div class="w-full h-full flex justify-center items-center">
       <img v-show="darkTheme" src="/static/img/about/github-white.png" width="45" height="45" alt="GitHubロゴ" class="mr-3" loading="lazy" />

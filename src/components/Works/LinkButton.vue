@@ -31,6 +31,6 @@ export default {
 }
 .tip {
   height: 2px;
-  transform: translate(0.05rem, -1px) rotate(45deg);
+  transform: translate(0.08rem, 0) rotate(45deg);
 }
 </style>

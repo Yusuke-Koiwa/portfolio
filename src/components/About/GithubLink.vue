@@ -6,8 +6,8 @@
     class="button block w-full mx-auto sm:mx-0 p-2 bg-white dark:bg-black border border-black shadow dark:border-white dark:shadow-white bg-c-transition"
   >
     <div class="w-full h-full flex justify-center items-center">
-      <img v-show="darkTheme" src="/static/img/about/github-white.png" width="45" height="45" alt="GitHubロゴ" class="mr-3" loading="lazy" />
-      <img v-show="!darkTheme" src="/static/img/about/github-black.png" width="45" height="45" alt="GitHubロゴ" class="mr-3" loading="lazy" />
+      <img v-show="darkTheme" src="/img/about/github-white.png" width="45" height="45" alt="GitHubロゴ" class="mr-3" loading="lazy" />
+      <img v-show="!darkTheme" src="/img/about/github-black.png" width="45" height="45" alt="GitHubロゴ" class="mr-3" loading="lazy" />
       <p class="text-2xl mr-3">GitHub</p>
       <div class="relative w-11 h-7 flex items-center pt-2">
         <div class="line w-full bg-black dark:bg-white"></div>

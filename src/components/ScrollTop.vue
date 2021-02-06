@@ -3,7 +3,7 @@
     <div class="relative">
       <img
         v-show="darkTheme"
-        src="/static/img/rocket-white.svg"
+        src="/img/rocket-white.svg"
         width="60"
         height="60"
         loading="lazy"
@@ -12,7 +12,7 @@
       />
       <img
         v-show="!darkTheme"
-        src="/static/img/rocket-black.svg"
+        src="/img/rocket-black.svg"
         width="60"
         height="60"
         loading="lazy"

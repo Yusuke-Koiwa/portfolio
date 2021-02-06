@@ -14,7 +14,7 @@
         >
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/static/img/works/works03@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <img src="/img/works/works03@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Engress</h3>
                 <p class="slide-text mb-3 text-lg">
@@ -28,7 +28,7 @@
 
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/static/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <img src="/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ</h3>
                 <p class="mb-3 text-lg">
@@ -42,7 +42,7 @@
 
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/static/img/works/works01@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <img src="/img/works/works01@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Anytime Nature</h3>
                 <p class="mb-5 text-lg">
@@ -57,7 +57,7 @@
 
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/static/img/works/works04@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <img src="/img/works/works04@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Koiwa's Portfolio</h3>
                 <p class="mb-5 text-lg">

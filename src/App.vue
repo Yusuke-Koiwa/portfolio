@@ -64,9 +64,9 @@ export default {
 
 <style scoped>
 .bg-light {
-  background-image: url('/static/img/bg-normal.png');
+  background-image: url('/img/bg-normal.png');
 }
 .bg-dark {
-  background-image: url('/static/img/bg-dark.png');
+  background-image: url('/img/bg-dark.png');
 }
 </style>

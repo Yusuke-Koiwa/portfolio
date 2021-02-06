@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <img src="/static/img/hero/rocket@2x.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
+    <img src="/img/hero/rocket@2x.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
       <ScrollMark class="scroll-mark" />
@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .hero {
-  background-image: url('/static/img/hero/hero-bg@2x.jpg');
+  background-image: url('/img/hero/hero-bg@2x.jpg');
 }
 .catch-copy {
   padding-top: 100px;

@@ -5,7 +5,7 @@
       <Service-item
         :number="1"
         label="Webサイト制作"
-        imgUrl="/static/img/service/landing_page.png"
+        imgUrl="/img/service/landing_page.png"
         imgClass="img-lg"
         :isRight="false"
         class="relative z-10 mb-48"
@@ -15,7 +15,7 @@
       <Service-item
         :number="2"
         label="WordPress制作"
-        imgUrl="/static/img/skills/wordpress@2x.png"
+        imgUrl="/img/skills/wordpress@2x.png"
         imgClass="img-md"
         :isRight="true"
         class="relative z-10 mb-48"
@@ -25,7 +25,7 @@
       <Service-item
         :number="3"
         label="ECサイト構築"
-        imgUrl="/static/img/service/online_shopping.png"
+        imgUrl="/img/service/online_shopping.png"
         imgClass="img-lg"
         :isRight="false"
         class="relative z-10"

@@ -1,9 +1,9 @@
 <template>
   <transition name="fade" appear>
-    <img v-show="darkTheme" src="/static/img/hero/hero-wave-black.png" alt="" class="absolute bottom-0 -right-0.5 w-full h-full" />
+    <img v-show="darkTheme" src="/img/hero/hero-wave-black.png" alt="" class="absolute bottom-0 -right-0.5 w-full h-full" />
   </transition>
   <transition name="fade" appear>
-    <img v-show="!darkTheme" src="/static/img/hero/hero-wave-white.png" alt="" class="absolute bottom-0 -right-0.5 w-full h-full" />
+    <img v-show="!darkTheme" src="/img/hero/hero-wave-white.png" alt="" class="absolute bottom-0 -right-0.5 w-full h-full" />
   </transition>
 </template>
 

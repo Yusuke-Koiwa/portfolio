@@ -5,7 +5,9 @@
       <Service-item
         :number="1"
         label="Webサイト制作"
-        imgUrl="/img/service/landing_page.png"
+        webpSrcset="/img/service/lp/landing_page@200w.webp 1x, /img/service/lp/landing_page@400w.webp 2x"
+        pngSrcset="/img/service/lp/landing_page@200w.png 1x, /img/service/lp/landing_page@400w.png 2x"
+        imgUrl="/img/service/lp/landing_page@200w.png"
         imgClass="img-lg"
         :isRight="false"
         class="relative z-10 mb-48"
@@ -15,7 +17,9 @@
       <Service-item
         :number="2"
         label="WordPress制作"
-        imgUrl="/img/skills/wp/wordpress@320w.png"
+        webpSrcset="/img/skills/wp/wordpress@160w.webp 1x, /img/skills/wp/wordpress@320w.webp 2x"
+        pngSrcset="/img/skills/wp/wordpress@160w.png 1x, /img/skills/wp/wordpress@320w.png 2x"
+        imgUrl="/img/skills/wp/wordpress@160w.png"
         imgClass="img-md"
         :isRight="true"
         class="relative z-10 mb-48"
@@ -25,7 +29,9 @@
       <Service-item
         :number="3"
         label="ECサイト構築"
-        imgUrl="/img/service/online_shopping.png"
+        webpSrcset="/img/service/shop/online_shopping@200w.webp 1x, /img/service/shop/online_shopping@400w.webp 2x"
+        pngSrcset="/img/service/shop/online_shopping@200w.png 1x, /img/service/shop/online_shopping@400w.png 2x"
+        imgUrl="/img/service/shop/online_shopping@200w.png"
         imgClass="img-lg"
         :isRight="false"
         class="relative z-10"

@@ -18,7 +18,11 @@
         class="img-wrapper flex justify-center items-center mb-8 md:mb-0 rounded-full bg-white bg-opacity-90 dark:bg-opacity-70"
         :class="[isRight ? 'md:mr-8' : 'md:ml-8']"
       >
-        <img :src="imgUrl" alt="" width="200" height="200" class="img" :class="imgClass" loading="lazy" />
+        <picture>
+          <source type="image/webp" :srcset="webpSrcset" />
+          <source type="image/png" :srcset="pngSrcset" />
+          <img :src="imgUrl" alt="" width="200" height="200" class="img" :class="imgClass" loading="lazy" />
+        </picture>
       </div>
     </div>
   </div>
@@ -31,6 +35,8 @@ export default {
   props: {
     number: Number,
     label: String,
+    webpSrcset: String,
+    pngSrcset: String,
     imgUrl: String,
     imgClass: String,
     isRight: Boolean,
@@ -77,7 +83,7 @@ export default {
   }
 }
 .img {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 .img-lg {

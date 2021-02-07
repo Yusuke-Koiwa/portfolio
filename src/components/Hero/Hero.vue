@@ -9,10 +9,7 @@
       </div>
     </div>
 
-    <picture>
-      <source type="image/webp" srcSet="/img/hero/rocket/rocket.webp 1x, /img/hero/rocket/rocket@2x.webp 2x" />
-      <img src="/img/hero/rocket/rocket.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
-    </picture>
+    <HeroRocket class="rocket absolute left-0 -ml-16 h-auto" />
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
       <ScrollMark class="scroll-mark" />
@@ -21,10 +18,11 @@
 </template>
 
 <script>
+import HeroRocket from './HeroRocket.vue';
 import HeroWave from './HeroWave.vue';
 import ScrollMark from './ScrollMark.vue';
 export default {
-  components: { HeroWave, ScrollMark },
+  components: { HeroWave, ScrollMark, HeroRocket },
   props: {
     darkTheme: {
       type: Boolean,

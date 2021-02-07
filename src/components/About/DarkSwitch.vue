@@ -1,6 +1,6 @@
 <template>
   <button @click="toggleTheme" class="switch-wrapper relative bg-gray-400 shadow-inner focus:outline-none">
-    <img :src="imgUrl" width="35" height="35" loading="lazy" :alt="imgAlt" class="switch-btn absolute left-0 top-0" :class="positionClass" />
+    <img :src="imgUrl" width="50" height="50" loading="lazy" :alt="imgAlt" class="switch-btn absolute left-0 top-0" :class="positionClass" />
   </button>
 </template>
 

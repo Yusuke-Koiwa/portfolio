@@ -64,9 +64,29 @@ export default {
 
 <style scoped>
 .bg-light {
-  background-image: url('/img/bg-normal.png');
+  background-image: url('/img/bg/normal-lg.png');
+}
+@media screen and (max-width: 768px) {
+  .bg-light {
+    background-image: url('/img/bg/normal-md.png');
+  }
+}
+@media screen and (max-width: 560px) {
+  .bg-light {
+    background-image: url('/img/bg/normal-sm.png');
+  }
 }
 .bg-dark {
-  background-image: url('/img/bg-dark.png');
+  background-image: url('/img/bg/dark-lg.png');
+}
+@media screen and (max-width: 768px) {
+  .bg-dark {
+    background-image: url('/img/bg/dark-md.png');
+  }
+}
+@media screen and (max-width: 560px) {
+  .bg-dark {
+    background-image: url('/img/bg/dark-sm.png');
+  }
 }
 </style>

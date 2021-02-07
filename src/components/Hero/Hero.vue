@@ -9,7 +9,10 @@
       </div>
     </div>
 
-    <img src="/img/hero/rocket@2x.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
+    <picture>
+      <source type="image/webp" srcSet="/img/hero/rocket/rocket.webp 1x, /img/hero/rocket/rocket@2x.webp 2x" />
+      <img src="/img/hero/rocket/rocket.png" alt="" class="rocket absolute left-0 -ml-16 h-auto" width="600" height="520" />
+    </picture>
 
     <div class="absolute bottom-0 left-1/2 mb-4 transform -translate-x-1/2">
       <ScrollMark class="scroll-mark" />

@@ -32,7 +32,52 @@ export default {
 
 <style scoped>
 .hero {
-  background-image: url('/img/hero/hero-bg@2x.jpg');
+  background-image: url('/img/hero/bg/2xl.jpg');
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/img/hero/bg/2xl@2x.jpg');
+  }
+}
+@media screen and (max-width: 1280px) {
+  .hero {
+    background-image: url('/img/hero/bg/xl.jpg');
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1280px), (min-resolution: 192dpi) and (max-width: 1280px) {
+  .hero {
+    background-image: url('/img/hero/bg/xl@2x.jpg');
+  }
+}
+@media screen and (max-width: 960px) {
+  .hero {
+    background-image: url('/img/hero/bg/lg.jpg');
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 960px), (min-resolution: 192dpi) and (max-width: 960px) {
+  .hero {
+    background-image: url('/img/hero/bg/lg@2x.jpg');
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url('/img/hero/bg/md.jpg');
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px) {
+  .hero {
+    background-image: url('/img/hero/bg/md@2x.jpg');
+  }
+}
+@media screen and (max-width: 560px) {
+  .hero {
+    background-image: url('/img/hero/bg/sm.jpg');
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 560px), (min-resolution: 192dpi) and (max-width: 560px) {
+  .hero {
+    background-image: url('/img/hero/bg/sm@2x.jpg');
+  }
 }
 .catch-copy {
   padding-top: 100px;

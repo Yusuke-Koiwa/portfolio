@@ -14,7 +14,17 @@
         >
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/img/works/works03@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 500px)"
+                  srcset="/img/works/03/works03@500w.webp 1x, /img/works/03/works03@1000w.webp 2x"
+                />
+                <source type="image/webp" srcset="/img/works/03/works03@768w.webp 1x, /img/works/03/works03@1500w.webp 2x" />
+                <source type="image/png" srcset="/img/works/03/works03@768w.png 1x, /img/works/03/works03@1500w.png 2x" />
+                <source type="image/png" media="(max-width: 500px)" srcset="/img/works/03/works03@500w.png 1x, /img/works/03/works03@1000w.png 2x" />
+                <img src="/img/works/03/works03@768.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              </picture>
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Engress</h3>
                 <p class="slide-text mb-3 text-lg">
@@ -28,7 +38,17 @@
 
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/img/works/works02@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 500px)"
+                  srcset="/img/works/02/works02@500w.webp 1x, /img/works/02/works02@1000w.webp 2x"
+                />
+                <source type="image/webp" srcset="/img/works/02/works02@768w.webp 1x, /img/works/02/works02@1500w.webp 2x" />
+                <source type="image/png" srcset="/img/works/02/works02@768w.png 1x, /img/works/02/works02@1500w.png 2x" />
+                <source type="image/png" media="(max-width: 500px)" srcset="/img/works/02/works02@500w.png 1x, /img/works/02/works02@1000w.png 2x" />
+                <img src="/img/works/02/works02@768.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              </picture>
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">完全版マハーバーラタ</h3>
                 <p class="mb-3 text-lg">
@@ -42,7 +62,17 @@
 
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/img/works/works01@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 500px)"
+                  srcset="/img/works/01/works01@500w.webp 1x, /img/works/01/works01@1000w.webp 2x"
+                />
+                <source type="image/webp" srcset="/img/works/01/works01@768w.webp 1x, /img/works/01/works01@1500w.webp 2x" />
+                <source type="image/png" srcset="/img/works/01/works01@768w.png 1x, /img/works/01/works01@1500w.png 2x" />
+                <source type="image/png" media="(max-width: 500px)" srcset="/img/works/01/works01@500w.png 1x, /img/works/01/works01@1000w.png 2x" />
+                <img src="/img/works/01/works01@768.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              </picture>
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Anytime Nature</h3>
                 <p class="mb-5 text-lg">
@@ -57,7 +87,17 @@
 
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
-              <img src="/img/works/works04@2x.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 500px)"
+                  srcset="/img/works/04/works04@500w.webp 1x, /img/works/04/works04@1000w.webp 2x"
+                />
+                <source type="image/webp" srcset="/img/works/04/works04@768w.webp 1x, /img/works/04/works04@1500w.webp 2x" />
+                <source type="image/png" srcset="/img/works/04/works04@768w.png 1x, /img/works/04/works04@1500w.png 2x" />
+                <source type="image/png" media="(max-width: 500px)" srcset="/img/works/04/works04@500w.png 1x, /img/works/04/works04@1000w.png 2x" />
+                <img src="/img/works/04/works04@768.png" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+              </picture>
               <div class="slide-text mx-auto md:px-6">
                 <h3 class="slide-heading mb-6 text-2xl text-center font-semibold">Koiwa's Portfolio</h3>
                 <p class="mb-5 text-lg">

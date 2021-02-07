@@ -12,13 +12,7 @@
         >ランディングページなどのwebサイト制作をおこないます。スマホやタブレット端末での表示に対するレスポンシブ化のほか、
         アニメーションを用いた動きのあるWebサイト制作が得意です。</Service-item
       >
-      <Service-item
-        :number="2"
-        label="WordPress制作"
-        imgUrl="/img/skills/wordpress@2x.png"
-        imgClass="img-md"
-        :isRight="true"
-        class="relative z-10 mb-48"
+      <Service-item :number="2" label="WordPress制作" imgUrl="/img/skills/wordpress.png" imgClass="img-md" :isRight="true" class="relative z-10 mb-48"
         >ブログやお知らせなど、更新が必要なWebサイトはWordPressで制作致します。 既存テーマのカスタマイズ、オリジナルテーマの制作が可能です。
         その他、サイトの高速化、セキュリティ対策、内部SEO対策などもお任せください。</Service-item
       >

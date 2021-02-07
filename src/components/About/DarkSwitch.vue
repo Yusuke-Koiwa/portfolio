@@ -1,6 +1,10 @@
 <template>
   <button @click="toggleTheme" class="switch-wrapper relative bg-gray-400 shadow-inner focus:outline-none">
-    <img :src="imgUrl" width="50" height="50" loading="lazy" :alt="imgAlt" class="switch-btn absolute left-0 top-0" :class="positionClass" />
+    <picture>
+      <source type="image/webp" :srcset="webpSrcset" />
+      <source type="image/png" :srcset="pngSrcset" />
+      <img :src="imgSrc" width="50" height="50" :alt="imgAlt" class="switch-btn absolute left-0 top-0" :class="positionClass" />
+    </picture>
   </button>
 </template>
 
@@ -11,6 +15,9 @@ export default {
       positionClass: null,
       imgUrl: null,
       imgAlt: null,
+      webpSrcset: null,
+      pngSrcset: null,
+      imgSrc: null,
     };
   },
   props: {
@@ -40,12 +47,16 @@ export default {
     darkTheme: function (dark) {
       if (dark) {
         this.positionClass = 'position-right';
-        this.imgUrl = '/img/about/moon.png';
+        this.webpSrcset = '/img/about/moon.webp 1x, /img/about/moon@2x.webp 2x';
+        this.pngSrcset = '/img/about/moon.png 1x, /img/about/moon@2x.png 2x';
+        this.imgSrc = '/img/about/moon.png';
         this.imgAlt = 'ダークモードON';
         this.$emit('toggleTheme', dark);
       } else {
         this.positionClass = 'position-left';
-        this.imgUrl = '/img/about/sun.png';
+        this.webpSrcset = '/img/about/sun.webp 1x, /img/about/sun@2x.webp 2x';
+        this.pngSrcset = '/img/about/sun.png 1x, /img/about/sun@2x.png 2x';
+        this.imgSrc = '/img/about/sun.png';
         this.imgAlt = 'ダークモードOFF';
         this.$emit('toggleTheme', dark);
       }

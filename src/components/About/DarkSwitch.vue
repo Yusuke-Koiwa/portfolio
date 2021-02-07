@@ -40,12 +40,12 @@ export default {
     darkTheme: function (dark) {
       if (dark) {
         this.positionClass = 'position-right';
-        this.imgUrl = '/img/about/moon@2x.png';
+        this.imgUrl = '/img/about/moon.png';
         this.imgAlt = 'ダークモードON';
         this.$emit('toggleTheme', dark);
       } else {
         this.positionClass = 'position-left';
-        this.imgUrl = '/img/about/sun@2x.png';
+        this.imgUrl = '/img/about/sun.png';
         this.imgAlt = 'ダークモードOFF';
         this.$emit('toggleTheme', dark);
       }

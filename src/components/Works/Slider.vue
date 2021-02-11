@@ -15,10 +15,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcsetSm="/img/works/03/works03@500w.webp 1x, /img/works/03/works03@1000w.webp 2x"
-                webpSrcset="/img/works/03/works03@768w.webp 1x, /img/works/03/works03@1500w.webp 2x"
-                pngSrcsetSm="/img/works/03/works03@500w.png 1x, /img/works/03/works03@1000w.png 2x"
-                pngSrcset="/img/works/03/works03@768w.png 1x, /img/works/03/works03@1500w.png 2x"
+                webpSrcset="/img/works/03/works03@500w.webp 500w, /img/works/03/works03@768w.webp 768w, /img/works/03/works03@1000w.webp 1000w, /img/works/03/works03@1500w.webp 1500w"
+                pngSrcset="/img/works/03/works03@500w.png 500w, /img/works/03/works03@768w.png 768w, /img/works/03/works03@1000w.png 1000w, /img/works/03/works03@1500w.png 1500w"
                 imgSrc="/img/works/03/works03@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">
@@ -35,10 +33,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcsetSm="/img/works/02/works02@500w.webp 1x, /img/works/02/works02@1000w.webp 2x"
-                webpSrcset="/img/works/02/works02@768w.webp 1x, /img/works/02/works02@1500w.webp 2x"
-                pngSrcsetSm="/img/works/02/works02@500w.png 1x, /img/works/02/works02@1000w.png 2x"
-                pngSrcset="/img/works/02/works02@768w.png 1x, /img/works/02/works02@1500w.png 2x"
+                webpSrcset="/img/works/02/works02@500w.webp 500w, /img/works/02/works02@768w.webp 768w, /img/works/02/works02@1000w.webp 1000w, /img/works/02/works02@1500w.webp 1500w"
+                pngSrcset="/img/works/02/works02@500w.png 500w, /img/works/02/works02@768w.png 768w, /img/works/02/works02@1000w.png 1000w, /img/works/02/works02@1500w.png 1500w"
                 imgSrc="/img/works/02/works02@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">
@@ -55,10 +51,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcsetSm="/img/works/01/works01@500w.webp 1x, /img/works/01/works01@1000w.webp 2x"
-                webpSrcset="/img/works/01/works01@768w.webp 1x, /img/works/01/works01@1500w.webp 2x"
-                pngSrcsetSm="/img/works/01/works01@500w.png 1x, /img/works/01/works01@1000w.png 2x"
-                pngSrcset="/img/works/01/works01@768w.png 1x, /img/works/01/works01@1500w.png 2x"
+                webpSrcset="/img/works/01/works01@500w.webp 500w, /img/works/01/works01@768w.webp 768w, /img/works/01/works01@1000w.webp 1000w, /img/works/01/works01@1500w.webp 1500w"
+                pngSrcset="/img/works/01/works01@500w.png 500w, /img/works/01/works01@768w.png 768w, /img/works/01/works01@1000w.png 1000w, /img/works/01/works01@1500w.png 1500w"
                 imgSrc="/img/works/01/works01@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">
@@ -76,10 +70,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcsetSm="/img/works/04/works04@500w.webp 1x, /img/works/04/works04@1000w.webp 2x"
-                webpSrcset="/img/works/04/works04@768w.webp 1x, /img/works/04/works04@1500w.webp 2x"
-                pngSrcsetSm="/img/works/04/works04@500w.png 1x, /img/works/04/works04@1000w.png 2x"
-                pngSrcset="/img/works/04/works04@768w.png 1x, /img/works/04/works04@1500w.png 2x"
+                webpSrcset="/img/works/04/works04@500w.webp 500w, /img/works/04/works04@768w.webp 768w, /img/works/04/works04@1000w.webp 1000w, /img/works/04/works04@1500w.webp 1500w"
+                pngSrcset="/img/works/04/works04@500w.png 500w, /img/works/04/works04@768w.png 768w, /img/works/04/works04@1000w.png 1000w, /img/works/04/works04@1500w.png 1500w"
                 imgSrc="/img/works/04/works04@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Roboto', 'ヒラギノ角ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'Arial' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #222;
@@ -41,7 +41,7 @@ button {
 }
 
 .font-heading {
-  @apply font-orbitron font-bold;
+  @apply font-orbitron;
 }
 
 .bg-c-transition {

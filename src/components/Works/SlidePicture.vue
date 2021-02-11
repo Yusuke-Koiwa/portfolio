@@ -4,7 +4,7 @@
     <source type="image/webp" :srcset="webpSrcset" />
     <source type="image/png" media="(max-width: 500px)" :srcset="pngSrcsetSm" />
     <source type="image/png" :srcset="pngSrcset" />
-    <img :src="imgSrc" alt="" width="1264" height="580" loading="lazy" class="mb-5" />
+    <img :src="imgSrc" alt="" width="1264" height="580" decoding="async" class="mb-5" />
   </picture>
 </template>
 

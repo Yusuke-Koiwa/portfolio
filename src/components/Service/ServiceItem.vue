@@ -21,7 +21,7 @@
         <picture>
           <source type="image/webp" :srcset="webpSrcset" />
           <source type="image/png" :srcset="pngSrcset" />
-          <img :src="imgUrl" alt="" width="200" height="200" class="img" :class="imgClass" loading="lazy" />
+          <img :src="imgUrl" alt="" width="200" height="200" class="img" :class="imgClass" decoding="async" />
         </picture>
       </div>
     </div>

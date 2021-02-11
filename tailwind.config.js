@@ -24,7 +24,7 @@ module.exports = {
       },
       colors: {
         'c-gray': '#C3C3C3',
-        'dark-gray': '#2d2d2d',
+        'dark-gray': '#313131',
       },
       boxShadow: {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.3)',

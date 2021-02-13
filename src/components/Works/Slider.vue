@@ -15,8 +15,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcset="/img/works/03/works03@500w.webp 500w, /img/works/03/works03@768w.webp 768w, /img/works/03/works03@1000w.webp 1000w, /img/works/03/works03@1500w.webp 1500w"
-                pngSrcset="/img/works/03/works03@500w.png 500w, /img/works/03/works03@768w.png 768w, /img/works/03/works03@1000w.png 1000w, /img/works/03/works03@1500w.png 1500w"
+                webpSrcset="/img/works/03/works03@400w.webp 400w, /img/works/03/works03@500w.webp 500w, /img/works/03/works03@600w.webp 600w, /img/works/03/works03@768w.webp 768w, /img/works/03/works03@800w.webp 800w, /img/works/03/works03@1000w.webp 1000w, /img/works/03/works03@1200w.webp 1200w, /img/works/03/works03@1536w.webp 1536w"
+                pngSrcset="/img/works/03/works03@400w.png 400w, /img/works/03/works03@500w.png 500w, /img/works/03/works03@600w.png 600w, /img/works/03/works03@768w.png 768w, /img/works/03/works03@800w.png 800w, /img/works/03/works03@1000w.png 1000w, /img/works/03/works03@1200w.png 1200w, /img/works/03/works03@1536w.png 1536w"
                 imgSrc="/img/works/03/works03@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">
@@ -33,8 +33,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcset="/img/works/02/works02@500w.webp 500w, /img/works/02/works02@768w.webp 768w, /img/works/02/works02@1000w.webp 1000w, /img/works/02/works02@1500w.webp 1500w"
-                pngSrcset="/img/works/02/works02@500w.png 500w, /img/works/02/works02@768w.png 768w, /img/works/02/works02@1000w.png 1000w, /img/works/02/works02@1500w.png 1500w"
+                webpSrcset="/img/works/02/works02@400w.webp 400w, /img/works/02/works02@500w.webp 500w, /img/works/02/works02@600w.webp 600w, /img/works/02/works02@768w.webp 768w, /img/works/02/works02@800w.webp 800w, /img/works/02/works02@1000w.webp 1000w, /img/works/02/works02@1200w.webp 1200w, /img/works/02/works02@1536w.webp 1536w"
+                pngSrcset="/img/works/02/works02@400w.png 400w, /img/works/02/works02@500w.png 500w, /img/works/02/works02@600w.png 600w, /img/works/02/works02@768w.png 768w, /img/works/02/works02@800w.png 800w, /img/works/02/works02@1000w.png 1000w, /img/works/02/works02@1200w.png 1200w, /img/works/02/works02@1536w.png 1536w"
                 imgSrc="/img/works/02/works02@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">
@@ -51,8 +51,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcset="/img/works/01/works01@500w.webp 500w, /img/works/01/works01@768w.webp 768w, /img/works/01/works01@1000w.webp 1000w, /img/works/01/works01@1500w.webp 1500w"
-                pngSrcset="/img/works/01/works01@500w.png 500w, /img/works/01/works01@768w.png 768w, /img/works/01/works01@1000w.png 1000w, /img/works/01/works01@1500w.png 1500w"
+                webpSrcset="/img/works/01/works01@400w.webp 400w, /img/works/01/works01@500w.webp 500w, /img/works/01/works01@600w.webp 600w, /img/works/01/works01@768w.webp 768w, /img/works/01/works01@800w.webp 800w, /img/works/01/works01@1000w.webp 1000w, /img/works/01/works01@1200w.webp 1200w, /img/works/01/works01@1536w.webp 1536w"
+                pngSrcset="/img/works/01/works01@400w.png 400w, /img/works/01/works01@500w.png 500w, /img/works/01/works01@600w.png 600w, /img/works/01/works01@768w.png 768w, /img/works/01/works01@800w.png 800w, /img/works/01/works01@1000w.png 1000w, /img/works/01/works01@1200w.png 1200w, /img/works/01/works01@1536w.png 1536w"
                 imgSrc="/img/works/01/works01@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">
@@ -70,8 +70,8 @@
           <swiper-slide class="flex flex-col h-auto justify-between">
             <div>
               <Slide-picture
-                webpSrcset="/img/works/04/works04@500w.webp 500w, /img/works/04/works04@768w.webp 768w, /img/works/04/works04@1000w.webp 1000w, /img/works/04/works04@1500w.webp 1500w"
-                pngSrcset="/img/works/04/works04@500w.png 500w, /img/works/04/works04@768w.png 768w, /img/works/04/works04@1000w.png 1000w, /img/works/04/works04@1500w.png 1500w"
+                webpSrcset="/img/works/04/works04@400w.webp 400w, /img/works/04/works04@500w.webp 500w, /img/works/04/works04@600w.webp 600w, /img/works/04/works04@768w.webp 768w, /img/works/04/works04@800w.webp 800w, /img/works/04/works04@1000w.webp 1000w, /img/works/04/works04@1200w.webp 1200w, /img/works/04/works04@1536w.webp 1536w"
+                pngSrcset="/img/works/04/works04@400w.png 400w, /img/works/04/works04@500w.png 500w, /img/works/04/works04@600w.png 600w, /img/works/04/works04@768w.png 768w, /img/works/04/works04@800w.png 800w, /img/works/04/works04@1000w.png 1000w, /img/works/04/works04@1200w.png 1200w, /img/works/04/works04@1536w.png 1536w"
                 imgSrc="/img/works/04/works04@768w.png"
               />
               <div class="slide-text mx-auto md:px-6">

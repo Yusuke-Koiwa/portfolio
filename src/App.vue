@@ -66,14 +66,14 @@ export default {
 .webp .bg-light {
   background-image: url('/img/bg/light-lg.webp');
 }
-.bg-light {
+.no-webp .bg-light {
   background-image: url('/img/bg/light-lg.png');
 }
 @media screen and (max-width: 768px) {
   .webp .bg-light {
     background-image: url('/img/bg/light-md.webp');
   }
-  .bg-light {
+  .no-webp .bg-light {
     background-image: url('/img/bg/light-md.png');
   }
 }
@@ -81,21 +81,21 @@ export default {
   .webp .bg-light {
     background-image: url('/img/bg/light-sm.webp');
   }
-  .bg-light {
+  .no-webp .bg-light {
     background-image: url('/img/bg/light-sm.png');
   }
 }
 .webp .bg-dark {
   background-image: url('/img/bg/dark-lg.webp');
 }
-.bg-dark {
+.no-webp .bg-dark {
   background-image: url('/img/bg/dark-lg.png');
 }
 @media screen and (max-width: 768px) {
   .webp .bg-dark {
     background-image: url('/img/bg/dark-md.webp');
   }
-  .bg-dark {
+  .no-webp .bg-dark {
     background-image: url('/img/bg/dark-md.png');
   }
 }
@@ -103,7 +103,7 @@ export default {
   .webp .bg-dark {
     background-image: url('/img/bg/dark-sm.webp');
   }
-  .bg-dark {
+  .no-webp .bg-dark {
     background-image: url('/img/bg/dark-sm.png');
   }
 }

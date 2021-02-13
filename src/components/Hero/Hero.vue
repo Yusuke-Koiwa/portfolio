@@ -35,14 +35,14 @@ export default {
 .webp .hero {
   background-image: url('/img/hero/bg/1920w.webp');
 }
-.hero {
+.no-webp .hero {
   background-image: url('/img/hero/bg/1920w.jpg');
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .webp .hero {
     background-image: url('/img/hero/bg/3840w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/3840w.jpg');
   }
 }
@@ -50,7 +50,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/1536w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/1536w.jpg');
   }
 }
@@ -58,7 +58,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/3072w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/3072w.jpg');
   }
 }
@@ -66,7 +66,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/960w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/960w.jpg');
   }
 }
@@ -74,7 +74,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/1920w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/1920w.jpg');
   }
 }
@@ -82,7 +82,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/768w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/768w.jpg');
   }
 }
@@ -90,7 +90,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/1536w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/1536w.jpg');
   }
 }
@@ -98,7 +98,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/480w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/480w.jpg');
   }
 }
@@ -106,7 +106,7 @@ export default {
   .webp .hero {
     background-image: url('/img/hero/bg/960w.webp');
   }
-  .hero {
+  .no-webp .hero {
     background-image: url('/img/hero/bg/960w.jpg');
   }
 }

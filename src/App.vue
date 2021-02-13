@@ -62,29 +62,47 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.webp .bg-light {
+  background-image: url('/img/bg/light-lg.webp');
+}
 .bg-light {
-  background-image: url('/img/bg/normal-lg.png');
+  background-image: url('/img/bg/light-lg.png');
 }
 @media screen and (max-width: 768px) {
+  .webp .bg-light {
+    background-image: url('/img/bg/light-md.webp');
+  }
   .bg-light {
-    background-image: url('/img/bg/normal-md.png');
+    background-image: url('/img/bg/light-md.png');
   }
 }
 @media screen and (max-width: 560px) {
-  .bg-light {
-    background-image: url('/img/bg/normal-sm.png');
+  .webp .bg-light {
+    background-image: url('/img/bg/light-sm.webp');
   }
+  .bg-light {
+    background-image: url('/img/bg/light-sm.png');
+  }
+}
+.webp .bg-dark {
+  background-image: url('/img/bg/dark-lg.webp');
 }
 .bg-dark {
   background-image: url('/img/bg/dark-lg.png');
 }
 @media screen and (max-width: 768px) {
+  .webp .bg-dark {
+    background-image: url('/img/bg/dark-md.webp');
+  }
   .bg-dark {
     background-image: url('/img/bg/dark-md.png');
   }
 }
 @media screen and (max-width: 560px) {
+  .webp .bg-dark {
+    background-image: url('/img/bg/dark-sm.webp');
+  }
   .bg-dark {
     background-image: url('/img/bg/dark-sm.png');
   }

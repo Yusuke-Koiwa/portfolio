@@ -31,55 +31,88 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.webp .hero {
+  background-image: url('/img/hero/bg/1920w.webp');
+}
 .hero {
-  background-image: url('/img/hero/bg/2xl.jpg');
+  background-image: url('/img/hero/bg/1920w.jpg');
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/3840w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/2xl@2x.jpg');
+    background-image: url('/img/hero/bg/3840w.jpg');
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1536px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/1536w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/xl.jpg');
+    background-image: url('/img/hero/bg/1536w.jpg');
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1280px), (min-resolution: 192dpi) and (max-width: 1280px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1536px), (min-resolution: 192dpi) and (max-width: 1536px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/3072w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/xl@2x.jpg');
+    background-image: url('/img/hero/bg/3072w.jpg');
   }
 }
 @media screen and (max-width: 960px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/960w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/lg.jpg');
+    background-image: url('/img/hero/bg/960w.jpg');
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 960px), (min-resolution: 192dpi) and (max-width: 960px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/1920w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/lg@2x.jpg');
+    background-image: url('/img/hero/bg/1920w.jpg');
   }
 }
 @media screen and (max-width: 768px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/768w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/md.jpg');
+    background-image: url('/img/hero/bg/768w.jpg');
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/1536w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/md@2x.jpg');
+    background-image: url('/img/hero/bg/1536w.jpg');
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/480w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/sm.jpg');
+    background-image: url('/img/hero/bg/480w.jpg');
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 560px), (min-resolution: 192dpi) and (max-width: 560px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), (min-resolution: 192dpi) and (max-width: 480px) {
+  .webp .hero {
+    background-image: url('/img/hero/bg/960w.webp');
+  }
   .hero {
-    background-image: url('/img/hero/bg/sm@2x.jpg');
+    background-image: url('/img/hero/bg/960w.jpg');
   }
 }
+</style>
+
+<style scoped>
 .catch-copy {
   padding-top: 100px;
   text-shadow: 1px 0 10px #fff;

@@ -11,7 +11,7 @@
       </div>
     </button>
 
-    <ul v-if="menuOpen" class="absolute top-16 right-16 font-heading text-2xl text-black dark:text-white">
+    <ul v-show="menuOpen" class="absolute top-16 right-16 font-heading text-2xl text-black dark:text-white">
       <li v-for="link in links" :key="link.name" class="mb-8" @click="clicked">
         <a :href="link.url" v-smooth-scroll class="block w-full">{{ link.name }}</a>
       </li>

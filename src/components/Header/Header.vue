@@ -8,7 +8,7 @@
       </nav>
     </header>
     <transition name="fade" appear>
-      <ModalBack v-if="menuOpen" @click="menuOpen = !menuOpen" />
+      <ModalBack v-show="menuOpen" @click="menuOpen = !menuOpen" />
     </transition>
   </div>
 </template>

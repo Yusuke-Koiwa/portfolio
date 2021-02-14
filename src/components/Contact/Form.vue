@@ -8,7 +8,7 @@
   >
     <div class="container mx-auto">
       <p class="form-description w-full mx-auto mb-16 text-2xl leading-10">
-        お仕事のご依頼、お問い合わせなどはこちらのフォームよりお気軽にお問い合わせください。内容を確認の上、ご返事いたします。
+        お仕事のご依頼、お問い合わせなどはこちらのフォームよりお気軽にお問い合わせください。内容を確認の上、ご返事致します。
       </p>
       <div class="flex flex-col md:flex-row justify-center md:items-center mb-16">
         <label for="form-name" class="field-label mr-5 mb-2 md:mb-0 flex md:justify-center items-center">

@@ -1,8 +1,9 @@
 <template>
   <div :class="bgClass" class="overflow-hidden bg-contain bg-repeat bg-fixed bg-white dark:bg-black bg-c-transition" style="min-width: 320px">
-    <Header />
+    <Header :loaded="loaded" />
     <main>
-      <Hero :darkTheme="darkTheme" />
+      <Loading :loaded="loaded" />
+      <Hero :darkTheme="darkTheme" :loaded="loaded" @imgLoaded="loadFinish" />
       <About :darkTheme="darkTheme" @toggleTheme="toggleTheme" />
       <Skills :darkTheme="darkTheme" />
       <Service />
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import Loading from './components/Loading.vue';
 import Hero from './components/Hero/Hero.vue';
 import Header from './components/Header/Header.vue';
 import About from './components/About/About.vue';
@@ -26,6 +28,7 @@ import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
+    Loading,
     Hero,
     Header,
     About,
@@ -37,11 +40,15 @@ export default {
   },
   data() {
     return {
+      loaded: false,
       darkTheme: null,
       bgClass: null,
     };
   },
   methods: {
+    loadFinish: function () {
+      this.loaded = true;
+    },
     toggleTheme: function (dark) {
       this.darkTheme = dark;
     },

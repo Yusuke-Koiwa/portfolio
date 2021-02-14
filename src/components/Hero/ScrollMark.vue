@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div>
     <div class="relative h-24 -mb-16 animate-bounce">
       <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-24 bg-black dark:bg-white"></div>

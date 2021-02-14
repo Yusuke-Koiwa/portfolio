@@ -1,14 +1,16 @@
 <template>
-  <header class="header absolute lg:fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
-    <nav class="nav w-full h-full mx-auto flex justify-between items-center text-white">
-      <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap"><a href="#top" v-smooth-scroll>Koiwa's Portfolio</a></h1>
-      <Menu :links="links" />
-      <MobileMenu :menuOpen="menuOpen" :links="links" @clicked="toggleMenu" />
-    </nav>
-  </header>
-  <transition name="fade" appear>
-    <ModalBack v-if="menuOpen" @click="menuOpen = !menuOpen" />
-  </transition>
+  <div v-if="loaded">
+    <header class="header absolute lg:fixed z-50 w-full h-20 px-6 bg-gradient-to-b from-black">
+      <nav class="nav w-full h-full mx-auto flex justify-between items-center text-white">
+        <h1 class="font-heading text-3.5xl sm:text-4xl whitespace-nowrap"><a href="#top" v-smooth-scroll>Koiwa's Portfolio</a></h1>
+        <Menu :links="links" />
+        <MobileMenu :menuOpen="menuOpen" :links="links" @clicked="toggleMenu" />
+      </nav>
+    </header>
+    <transition name="fade" appear>
+      <ModalBack v-if="menuOpen" @click="menuOpen = !menuOpen" />
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -43,6 +45,11 @@ export default {
         },
       ],
     };
+  },
+  props: {
+    loaded: {
+      type: Boolean,
+    },
   },
   methods: {
     toggleMenu: function () {

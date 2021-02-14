@@ -47,7 +47,12 @@ export default {
   },
   methods: {
     loadFinish: function () {
-      this.loaded = true;
+      setTimeout(
+        function () {
+          this.loaded = true;
+        }.bind(this),
+        300
+      );
     },
     toggleTheme: function (dark) {
       this.darkTheme = dark;
